@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garage Lefèvre · Entretien et réparation toutes marques à Rennes</title>
+  <meta name="description" content="Garage Lefèvre, garage indépendant toutes marques à Rennes depuis 1998 : entretien, freinage, distribution, pneus, climatisation, diagnostic. Prix affichés, devis gratuit, rendez-vous en ligne.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1C1F24">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Garage Lefèvre">
+  <meta property="og:title" content="Garage Lefèvre · Entretien et réparation toutes marques à Rennes">
+  <meta property="og:description" content="Garage familial depuis 1998. Prix affichés, devis gratuit, véhicule de prêt et garantie 12 mois pièces et main-d’œuvre.">
+  <meta property="og:url" content="https://sacha9214.github.io/demos/garage/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
+  <meta property="og:image:alt" content="Mécanicien penché sur le moteur d’une voiture dans l’atelier">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Garage Lefèvre",
+    "description": "Garage indépendant toutes marques à Rennes depuis 1998 : entretien, réparation, pneus, freinage, climatisation, diagnostic électronique et préparation au contrôle technique.",
+    "url": "https://sacha9214.github.io/demos/garage/",
+    "image": "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=1600&q=70",
+    "telephone": "+33 2 61 91 47 20",
+    "email": "contact@garage-lefevre.example",
+    "foundingDate": "1998",
+    "priceRange": "€€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Carte bancaire, Espèces, Chèque, Virement",
+    "areaServed": "Rennes Métropole",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8 allée des Carrossiers, ZA de la Croix-Forgeron",
+      "postalCode": "35000",
+      "addressLocality": "Rennes",
+      "addressRegion": "Bretagne",
+      "addressCountry": "FR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "12:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "13:30", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Prestations et tarifs indicatifs TTC",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vidange et filtre à huile" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 89, "priceCurrency": "EUR" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Plaquettes de frein avant" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 119, "priceCurrency": "EUR" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kit de distribution" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 390, "priceCurrency": "EUR" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recharge climatisation" }, "price": 79, "priceCurrency": "EUR" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnostic électronique" }, "price": 49, "priceCurrency": "EUR" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Montage et équilibrage pneu (par roue)" }, "price": 15, "priceCurrency": "EUR" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pré-contrôle technique" }, "price": 29, "priceCurrency": "EUR" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Shared icon sprite -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5.2 3.5h3.1l1.6 4.1-2.1 1.3a11 11 0 0 0 5.3 5.3l1.3-2.1 4.1 1.6v3.1a2 2 0 0 1-2.2 2A15.8 15.8 0 0 1 3.2 5.7a2 2 0 0 1 2-2.2z"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></g></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.6 2.9 6 6.5.8-4.8 4.5 1.2 6.5L12 17.2l-5.8 3.2 1.2-6.5-4.8-4.5 6.5-.8z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></g></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8v.1"/></g></symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <div class="demo-banner" id="haut">
+    <p>Site de démonstration : Garage Lefèvre est une entreprise fictive · Photos Unsplash · Réalisé par Sacha · <a href="../">Voir les autres exemples</a></p>
+  </div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="#haut">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M0 0h31l9 9v31H0z" fill="#F26B1D"/><path d="M11 9h6.5v16.5H29V31H11z" fill="#1C1F24"/></svg>
+        </span>
+        <span class="logo__text">
+          <span class="logo__name">Lefèvre</span>
+          <span class="logo__tag">Garage · Rennes</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#prestations">Prestations</a></li>
+          <li><a href="#atelier">L’atelier</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#infos">Infos pratiques</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav__extra">
+          <a class="btn btn--primary" href="#rendez-vous">Prendre rendez-vous</a>
+          <a class="btn btn--outline-light" href="tel:+33261914720"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>02 61 91 47 20</a>
+        </div>
+      </nav>
+
+      <a class="header__phone" href="tel:+33261914720"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>02 61 91 47 20</a>
+      <a class="btn btn--primary btn--sm header__cta" href="#rendez-vous">Prendre rendez-vous</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Ouvrir le menu</span>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu" tabindex="-1">
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img
+          src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+          srcset="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                  https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                  https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                  https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+          sizes="(max-width: 860px) 100vw, 46vw"
+          width="1600" height="2400"
+          alt="Un mécanicien en sweat noir, penché sous le capot ouvert, contrôle un faisceau du moteur avec des gants de protection."
+          fetchpriority="high">
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__kicker">
+          <span class="status" data-status>Lun–ven 8h–18h30</span>
+          <span>Garage indépendant depuis 1998</span>
+        </p>
+        <h1 id="hero-title">Entretien et réparation <span class="accent">toutes marques</span> à&nbsp;Rennes</h1>
+        <p class="hero__lead">Vidange, freins, distribution, pneus, clim, diagnostic&nbsp;: un prix annoncé avant de commencer, et votre voiture rendue le jour prévu. Le plus souvent, le jour même.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#rendez-vous">Prendre rendez-vous <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="hero__phone" href="tel:+33261914720">
+            <span class="hero__phone-icon" aria-hidden="true"><svg class="icon"><use href="#i-phone"/></svg></span>
+            <span class="hero__phone-text">
+              <span class="hero__phone-label">Ou appelez l’atelier</span>
+              <span class="hero__phone-num">02 61 91 47 20</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero__prices" aria-labelledby="hero-prices-title">
+        <p class="hero__prices-title" id="hero-prices-title">Prix affichés, TTC</p>
+        <ul>
+          <li><span>Vidange + filtre</span><span class="leader" aria-hidden="true"></span><strong>dès 89&nbsp;€</strong></li>
+          <li><span>Diagnostic électronique</span><span class="leader" aria-hidden="true"></span><strong>49&nbsp;€</strong></li>
+          <li><span>Recharge clim</span><span class="leader" aria-hidden="true"></span><strong>79&nbsp;€</strong></li>
+        </ul>
+        <a class="hero__prices-link" href="#prestations">Tous nos tarifs <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </aside>
+    </section>
+
+    <!-- ========== TRUST STRIP ========== -->
+    <section class="trust" aria-label="Nos engagements">
+      <ul class="container trust__list">
+        <li class="trust__item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8.5L19 7.5V21H6z"/><path d="M14 3v5h5"/><path d="M14.2 12.3a2.8 2.8 0 1 0 0 3.9M9.2 13.4h3.6M9.2 15.1h3.6"/></g></svg>
+          Devis gratuit
+        </li>
+        <li class="trust__item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2.8 20 7.4v9.2L12 21.2 4 16.6V7.4z"/><circle cx="12" cy="12" r="3.3"/></g></svg>
+          Pièces d’origine ou équivalentes
+        </li>
+        <li class="trust__item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5v-3.3l2.1-4.5A2 2 0 0 1 6.9 7.5h8.4a2 2 0 0 1 1.6.8l2.9 3.9 1.3.5a1.4 1.4 0 0 1 .9 1.3v2.5h-1.8"/><path d="M9.6 16.5h4.8M3 16.5h1.4"/><circle cx="7" cy="16.7" r="2"/><circle cx="16.9" cy="16.7" r="2"/><path d="M4.6 12.2h15"/></g></svg>
+          Véhicule de prêt sur réservation
+        </li>
+        <li class="trust__item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 19.5 6v5.6c0 4.5-3.2 8.1-7.5 9.4-4.3-1.3-7.5-4.9-7.5-9.4V6z"/><path d="m8.8 12 2.3 2.3 4.4-4.6"/></g></svg>
+          Garantie 12 mois pièces et main-d’œuvre
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section section--steel" id="prestations" aria-labelledby="prestations-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">01</span>Nos prestations</p>
+            <h2 id="prestations-title">Ce qu’on fait, et combien ça coûte</h2>
+          </div>
+          <p class="section-head__text">Les interventions courantes ont un prix affiché, pièces et main-d’œuvre comprises. Pour tout le reste, on regarde la voiture et on vous donne un devis écrit avant de toucher à quoi que ce soit.</p>
+        </div>
+
+        <div class="services">
+          <article class="service" data-reveal>
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c6 7.4 10 12.9 10 18a10 10 0 0 1-20 0c0-5.1 4-10.6 10-18z"/><path d="M19.5 25.5a4.5 4.5 0 0 0 4.5 4.5"/><path d="M8 42h32"/></g></svg>
+            <h3 class="service__name">Vidange + filtre</h3>
+            <p class="service__desc">Huile aux normes du constructeur, filtre neuf, contrôle des niveaux et des points de sécurité. Carnet tamponné.</p>
+            <div class="service__foot">
+              <p class="price"><span class="price__label">À partir de</span><span class="price__value">89<span class="price__cur">€</span></span></p>
+              <a class="service__link" href="#rendez-vous" data-service="Vidange + filtre">Réserver<span class="visually-hidden"> une vidange</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service" data-reveal>
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="22" cy="26" r="15"/><circle cx="22" cy="26" r="4.5"/><circle cx="22" cy="16" r=".6"/><circle cx="32" cy="26" r=".6"/><circle cx="22" cy="36" r=".6"/><circle cx="12" cy="26" r=".6"/><path d="M30 7.5a19 19 0 0 1 10.5 10.5" stroke-width="5"/></g></svg>
+            <h3 class="service__name">Plaquettes de frein AV</h3>
+            <p class="service__desc">Plaquettes de qualité d’origine, contrôle de l’usure des disques et du liquide. Essai routier inclus.</p>
+            <div class="service__foot">
+              <p class="price"><span class="price__label">À partir de</span><span class="price__value">119<span class="price__cur">€</span></span></p>
+              <a class="service__link" href="#rendez-vous" data-service="Freinage">Réserver<span class="visually-hidden"> un changement de plaquettes</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service" data-reveal>
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="32" r="8"/><circle cx="34" cy="14" r="6"/><circle cx="14" cy="32" r="2"/><circle cx="34" cy="14" r="1.6"/><path d="M8.6 26.1 29.8 9.7M19.6 37.8l19.1-19.6"/></g></svg>
+            <h3 class="service__name">Kit de distribution</h3>
+            <p class="service__desc">Courroie, galets et pompe à eau selon la préconisation constructeur, au bon kilométrage.</p>
+            <div class="service__foot">
+              <p class="price"><span class="price__label">À partir de</span><span class="price__value">390<span class="price__cur">€</span></span></p>
+              <a class="service__link" href="#rendez-vous" data-service="Distribution">Réserver<span class="visually-hidden"> une distribution</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service" data-reveal>
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5v38M7.5 14.5l33 19M7.5 33.5l33-19"/><path d="m19 8 5 5 5-5M19 40l5-5 5 5M6.4 21.3l6.8-1.8-1.8-6.8M41.6 26.7l-6.8 1.8 1.8 6.8M11.4 35.3l1.8-6.8-6.8-1.8M36.6 12.7l-1.8 6.8 6.8 1.8"/></g></svg>
+            <h3 class="service__name">Recharge clim</h3>
+            <p class="service__desc">Contrôle d’étanchéité, recharge et test de température en sortie d’aération. Gaz R1234yf&nbsp;: sur devis.</p>
+            <div class="service__foot">
+              <p class="price"><span class="price__label">Forfait</span><span class="price__value">79<span class="price__cur">€</span></span></p>
+              <a class="service__link" href="#rendez-vous" data-service="Climatisation">Réserver<span class="visually-hidden"> une recharge de climatisation</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service" data-reveal>
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="38" height="25" rx="2"/><path d="M17 41h14M24 33v8"/><path d="M11 21h6l3-7 5 13 3-6h9"/></g></svg>
+            <h3 class="service__name">Diagnostic électronique</h3>
+            <p class="service__desc">Voyant moteur, ABS, airbag&nbsp;: lecture et analyse des défauts, toutes marques. Déduit si la réparation est faite ici.</p>
+            <div class="service__foot">
+              <p class="price"><span class="price__label">Forfait</span><span class="price__value">49<span class="price__cur">€</span></span></p>
+              <a class="service__link" href="#rendez-vous" data-service="Diagnostic">Réserver<span class="visually-hidden"> un diagnostic</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service" data-reveal>
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="2"/><path d="M24 6v4M24 38v4M6 24h4M38 24h4M11.3 11.3l2.8 2.8M33.9 33.9l2.8 2.8M11.3 36.7l2.8-2.8M33.9 14.1l2.8-2.8"/></g></svg>
+            <h3 class="service__name">Montage pneus</h3>
+            <p class="service__desc">Démontage, montage, équilibrage et valve neuve. Pneus fournis par nos soins ou apportés par vous.</p>
+            <div class="service__foot">
+              <p class="price"><span class="price__label">Par roue</span><span class="price__value">15<span class="price__cur">€</span></span></p>
+              <a class="service__link" href="#rendez-vous" data-service="Pneus">Réserver<span class="visually-hidden"> un montage de pneus</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service" data-reveal>
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="34" rx="2"/><path d="M18 8V5h12v3"/><path d="m17 25 5 5 9-10"/></g></svg>
+            <h3 class="service__name">Pré-contrôle technique</h3>
+            <p class="service__desc">On passe en revue les points du contrôle technique avant le rendez-vous, pour éviter la contre-visite.</p>
+            <div class="service__foot">
+              <p class="price"><span class="price__label">Forfait</span><span class="price__value">29<span class="price__cur">€</span></span></p>
+              <a class="service__link" href="#rendez-vous" data-service="Pré-contrôle technique">Réserver<span class="visually-hidden"> un pré-contrôle technique</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service service--cta" data-reveal>
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M29.4 12.6a2 2 0 0 0 0 2.8l3.2 3.2a2 2 0 0 0 2.8 0l7.5-7.5a12 12 0 0 1-15.9 15.9L13.3 40.7a4.2 4.2 0 0 1-6-6L21 21.1A12 12 0 0 1 36.9 5.2z"/></g></svg>
+            <h3 class="service__name">Et tout le reste</h3>
+            <p class="service__desc">Embrayage, échappement, amortisseurs, batterie, géométrie, bruits suspects&hellip; On vous répond avec un devis écrit.</p>
+            <div class="service__foot">
+              <p class="price"><span class="price__label">Devis</span><span class="price__value price__value--text">Gratuit</span></p>
+              <a class="service__link" href="#rendez-vous" data-service="Autre / je ne sais pas">Demander<span class="visually-hidden"> un devis</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+
+        <p class="services__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span><strong>Prix TTC indicatifs, devis précis gratuit.</strong> Tarifs 2026 pour une citadine ou une compacte, pièces et main-d’œuvre comprises.</span></p>
+      </div>
+    </section>
+
+    <!-- ========== WHY US ========== -->
+    <section class="section" id="atelier" aria-labelledby="atelier-title">
+      <div class="container why">
+        <figure class="why__media" data-reveal>
+          <img
+            src="https://images.unsplash.com/photo-1771340012319-0b4fca008b54?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+            srcset="https://images.unsplash.com/photo-1771340012319-0b4fca008b54?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                    https://images.unsplash.com/photo-1771340012319-0b4fca008b54?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                    https://images.unsplash.com/photo-1771340012319-0b4fca008b54?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                    https://images.unsplash.com/photo-1771340012319-0b4fca008b54?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+            sizes="(max-width: 860px) 100vw, 50vw"
+            width="1600" height="1067"
+            alt="Atelier clair et rangé : un technicien contrôle le compartiment moteur d’une berline grise, à côté d’un pont élévateur et d’un établi."
+            loading="lazy" decoding="async">
+          <figcaption class="why__badge">
+            <span class="why__badge-num">1998</span>
+            <span class="why__badge-text">Deux générations de Lefèvre à l’atelier</span>
+          </figcaption>
+        </figure>
+
+        <div class="why__body">
+          <p class="eyebrow"><span class="eyebrow__num">02</span>Pourquoi nous</p>
+          <h2 id="atelier-title">Un garage de famille, équipé comme une concession</h2>
+          <p class="why__text">Alain Lefèvre a ouvert l’atelier en 1998 avec un pont élévateur et une règle simple&nbsp;: dire au client ce qui est urgent, et ce qui peut attendre. Son fils Mathieu a repris le garage en 2019 et l’a équipé pour les voitures d’aujourd’hui (valises de diagnostic multimarques, station de clim, géométrie 3D), sans changer la règle.</p>
+          <ul class="checks">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Un devis écrit avant chaque intervention.</strong> Le prix annoncé est le prix payé.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>On vous appelle avant tout travail imprévu.</strong> Rien n’est fait sans votre accord.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vos pièces usagées vous sont montrées.</strong> Vous voyez ce qui a été changé, et pourquoi.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Garantie constructeur préservée.</strong> Entretien selon le plan du constructeur, carnet tamponné.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="stats">
+          <li class="stat" data-reveal><p class="stat__num">28<small>ans</small></p><p class="stat__label">d’atelier à Rennes, dans la même famille</p></li>
+          <li class="stat" data-reveal><p class="stat__num">2&nbsp;400</p><p class="stat__label">véhicules entretenus ou réparés chaque année</p></li>
+          <li class="stat" data-reveal><p class="stat__num">6</p><p class="stat__label">techniciens, dont 2 habilités hybride et électrique</p></li>
+          <li class="stat" data-reveal><p class="stat__num">48<small>h</small></p><p class="stat__label">délai moyen pour obtenir un rendez-vous</p></li>
+        </ul>
+
+        <div class="brands">
+          <p class="brands__title">Toutes marques, et chaque semaine&nbsp;:</p>
+          <ul class="pills">
+            <li class="pill">Renault</li><li class="pill">Peugeot</li><li class="pill">Citroën</li><li class="pill">Dacia</li><li class="pill">DS</li><li class="pill">Volkswagen</li><li class="pill">Audi</li><li class="pill">Škoda</li><li class="pill">Seat</li><li class="pill">Toyota</li><li class="pill">Ford</li><li class="pill">Opel</li><li class="pill">Fiat</li><li class="pill">Nissan</li><li class="pill">Kia</li><li class="pill">Hyundai</li><li class="pill">BMW</li><li class="pill">Mercedes-Benz</li><li class="pill">Tesla</li><li class="pill pill--accent">Hybrides et électriques</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PHOTO BAND ========== -->
+    <div class="photo-band">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&amp;fit=crop&amp;w=800&amp;q=70"
+             srcset="https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                     https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                     https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                     https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+             sizes="(max-width: 760px) 100vw, 33vw" width="1600" height="1067"
+             alt="Main gantée posée sur un pneu monté sur une voiture levée, jante alliage visible." loading="lazy" decoding="async">
+        <figcaption>Pneus et freinage</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+             srcset="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                     https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                     https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                     https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+             sizes="(max-width: 760px) 50vw, 40vw" width="1600" height="900"
+             alt="Technicien en tenue grise inspectant le compartiment moteur d’une voiture, capot relevé." loading="lazy" decoding="async">
+        <figcaption>Mécanique et diagnostic</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=800&amp;q=70"
+             srcset="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                     https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                     https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                     https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+             sizes="(max-width: 760px) 50vw, 33vw" width="1600" height="1067"
+             alt="Huile moteur versée à l’entonnoir dans le moteur d’une voiture pendant une vidange." loading="lazy" decoding="async">
+        <figcaption>Vidange et entretien</figcaption>
+      </figure>
+    </div>
+
+    <!-- ========== BOOKING ========== -->
+    <section class="section section--dark" id="rendez-vous" aria-labelledby="rdv-title">
+      <div class="container booking">
+        <div class="booking__intro">
+          <p class="eyebrow"><span class="eyebrow__num">03</span>Rendez-vous</p>
+          <h2 id="rdv-title">Réservez votre créneau en 2&nbsp;minutes</h2>
+          <p class="booking__lead">Indiquez la voiture et ce qu’il faut faire. On vous rappelle pour confirmer l’heure et vous donner un premier prix.</p>
+          <ol class="steps">
+            <li><p><strong>Vous choisissez un jour</strong><span>Matin ou après-midi, du lundi au vendredi.</span></p></li>
+            <li><p><strong>On vous rappelle sous 2&nbsp;h</strong><span>Pour confirmer le créneau et chiffrer l’intervention.</span></p></li>
+            <li><p><strong>Vous déposez la voiture</strong><span>Dès 8&nbsp;h, ou la veille au soir dans notre boîte à clés.</span></p></li>
+            <li><p><strong>On vous prévient par SMS</strong><span>Dès qu’elle est prête, avec la facture détaillée.</span></p></li>
+          </ol>
+          <a class="booking__call" href="tel:+33261914720">
+            <span class="booking__call-label">Plus pressé&nbsp;? Appelez-nous</span>
+            <span class="booking__call-num"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>02 61 91 47 20</span>
+          </a>
+        </div>
+
+        <div class="form-panel">
+          <form class="form" id="rdv-form" action="#rendez-vous" method="post" novalidate>
+            <div class="form-alert" id="form-alert" role="alert" tabindex="-1" hidden></div>
+
+            <fieldset>
+              <legend><span class="legend__num">1</span>Votre véhicule</legend>
+              <div class="field field--plate">
+                <label for="plaque">Immatriculation</label>
+                <div class="plate" id="plate-box">
+                  <span class="plate__band" aria-hidden="true">
+                    <svg viewBox="0 0 20 20"><g fill="#FFCC00"><circle cx="10" cy="3" r="1.1"/><circle cx="13.5" cy="3.9" r="1.1"/><circle cx="16.1" cy="6.5" r="1.1"/><circle cx="17" cy="10" r="1.1"/><circle cx="16.1" cy="13.5" r="1.1"/><circle cx="13.5" cy="16.1" r="1.1"/><circle cx="10" cy="17" r="1.1"/><circle cx="6.5" cy="16.1" r="1.1"/><circle cx="3.9" cy="13.5" r="1.1"/><circle cx="3" cy="10" r="1.1"/><circle cx="3.9" cy="6.5" r="1.1"/><circle cx="6.5" cy="3.9" r="1.1"/></g></svg>
+                    F
+                  </span>
+                  <input class="plate__input" id="plaque" name="plaque" type="text" inputmode="text" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="9" placeholder="AA-123-AA" aria-describedby="plaque-hint plaque-error">
+                  <span class="plate__band plate__band--dept" aria-hidden="true"><span class="plate__logo"></span>35</span>
+                </div>
+                <p class="hint" id="plaque-hint">Format AA-123-AA, les tirets s’ajoutent tout seuls.</p>
+                <p class="error" id="plaque-error"></p>
+                <label class="inline-check">
+                  <input class="check" type="checkbox" id="sans-plaque" name="sans-plaque">
+                  <span>Pas encore immatriculé (véhicule neuf ou importé)</span>
+                </label>
+              </div>
+
+              <div class="grid-3">
+                <div class="field">
+                  <label for="marque">Marque</label>
+                  <input class="input" id="marque" name="marque" type="text" list="marques" autocomplete="off" placeholder="Peugeot" aria-describedby="marque-error">
+                  <datalist id="marques">
+                    <option value="Renault"></option><option value="Peugeot"></option><option value="Citroën"></option><option value="Dacia"></option><option value="DS"></option><option value="Volkswagen"></option><option value="Audi"></option><option value="Škoda"></option><option value="Seat"></option><option value="Toyota"></option><option value="Ford"></option><option value="Opel"></option><option value="Fiat"></option><option value="Nissan"></option><option value="Kia"></option><option value="Hyundai"></option><option value="BMW"></option><option value="Mercedes-Benz"></option><option value="Tesla"></option>
+                  </datalist>
+                  <p class="error" id="marque-error"></p>
+                </div>
+                <div class="field">
+                  <label for="modele">Modèle</label>
+                  <input class="input" id="modele" name="modele" type="text" autocomplete="off" placeholder="308 SW" aria-describedby="modele-error">
+                  <p class="error" id="modele-error"></p>
+                </div>
+                <div class="field">
+                  <label for="km">Kilométrage</label>
+                  <div class="input-suffix">
+                    <input class="input" id="km" name="km" type="text" inputmode="numeric" autocomplete="off" placeholder="85 000" aria-describedby="km-error">
+                    <span aria-hidden="true">km</span>
+                  </div>
+                  <p class="error" id="km-error"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset id="prestation-group" aria-describedby="prestation-error">
+              <legend><span class="legend__num">2</span>L’intervention <span class="legend__hint">plusieurs choix possibles</span></legend>
+              <div class="chips">
+                <label class="chip"><input class="check" type="checkbox" name="prestation" value="Vidange + filtre"><span>Vidange + filtre</span></label>
+                <label class="chip"><input class="check" type="checkbox" name="prestation" value="Freinage"><span>Freinage</span></label>
+                <label class="chip"><input class="check" type="checkbox" name="prestation" value="Distribution"><span>Distribution</span></label>
+                <label class="chip"><input class="check" type="checkbox" name="prestation" value="Climatisation"><span>Climatisation</span></label>
+                <label class="chip"><input class="check" type="checkbox" name="prestation" value="Diagnostic"><span>Diagnostic / voyant</span></label>
+                <label class="chip"><input class="check" type="checkbox" name="prestation" value="Pneus"><span>Pneus</span></label>
+                <label class="chip"><input class="check" type="checkbox" name="prestation" value="Pré-contrôle technique"><span>Pré-contrôle technique</span></label>
+                <label class="chip"><input class="check" type="checkbox" name="prestation" value="Autre / je ne sais pas"><span>Autre / je ne sais pas</span></label>
+              </div>
+              <p class="error" id="prestation-error"></p>
+              <div class="field">
+                <label for="commentaire">Précisions <span class="opt">(facultatif)</span></label>
+                <textarea class="input" id="commentaire" name="commentaire" rows="3" maxlength="600" placeholder="Bruit au freinage, voyant orange depuis hier, révision des 60 000 km…"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend><span class="legend__num">3</span>Le créneau</legend>
+              <div class="grid-2 grid-2--slot">
+                <div class="field">
+                  <label for="date">Date souhaitée</label>
+                  <input class="input" id="date" name="date" type="date" aria-describedby="date-hint date-error">
+                  <p class="hint" id="date-hint">Du lundi au vendredi.</p>
+                  <p class="error" id="date-error"></p>
+                </div>
+                <div class="field" role="radiogroup" aria-labelledby="creneau-label" aria-describedby="creneau-error" id="creneau-group">
+                  <span class="label" id="creneau-label">Dépôt du véhicule</span>
+                  <div class="slots">
+                    <label class="slot"><input type="radio" name="creneau" value="matin"><span><strong>Matin</strong>8h – 12h</span></label>
+                    <label class="slot"><input type="radio" name="creneau" value="apres-midi"><span><strong>Après-midi</strong>13h30 – 18h30</span></label>
+                  </div>
+                  <p class="error" id="creneau-error"></p>
+                </div>
+              </div>
+              <label class="option-box">
+                <input class="check" type="checkbox" id="pret" name="pret">
+                <span><strong>Besoin d’un véhicule de prêt</strong><span class="option-box__hint">Gratuit dès 300&nbsp;€ de travaux, sinon 15&nbsp;€ la journée. Selon disponibilité.</span></span>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend><span class="legend__num">4</span>Vos coordonnées</legend>
+              <div class="field">
+                <label for="nom">Nom et prénom</label>
+                <input class="input" id="nom" name="nom" type="text" autocomplete="name" placeholder="Claire Martin" aria-describedby="nom-error">
+                <p class="error" id="nom-error"></p>
+              </div>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="tel">Téléphone</label>
+                  <input class="input" id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="06 12 34 56 78" aria-describedby="tel-error">
+                  <p class="error" id="tel-error"></p>
+                </div>
+                <div class="field">
+                  <label for="email">E-mail</label>
+                  <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="claire.martin@mail.fr" aria-describedby="email-error">
+                  <p class="error" id="email-error"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form__submit">
+              <button class="btn btn--primary btn--lg btn--block" type="submit">Demander ce rendez-vous <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              <p class="form__legal">Vos coordonnées servent uniquement à vous rappeler pour ce rendez-vous. Elles ne sont ni revendues ni utilisées pour de la publicité.</p>
+            </div>
+          </form>
+
+          <div class="success" id="rdv-success" hidden>
+            <div class="success__head">
+              <span class="success__icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+              <div>
+                <p class="success__ref" id="success-ref">Demande n°&nbsp;GL-0000</p>
+                <h3 id="success-title" tabindex="-1">Merci, c’est noté.</h3>
+              </div>
+            </div>
+            <p class="success__text" id="success-text">Nous vous rappelons sous 2&nbsp;h ouvrées pour confirmer le créneau.</p>
+            <dl class="ticket" id="success-summary"></dl>
+            <p class="demo-note">Démo : aucune donnée n’a été envoyée.</p>
+            <button class="btn btn--outline" type="button" id="rdv-reset">Faire une autre demande</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section class="section section--steel" id="avis" aria-labelledby="avis-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">04</span>Avis clients</p>
+            <h2 id="avis-title">Ils nous confient leur voiture</h2>
+          </div>
+          <p class="section-head__text">Particuliers, artisans, petites flottes d’entreprise&nbsp;: quelques mots laissés par nos clients cette année.</p>
+        </div>
+
+        <div class="reviews">
+          <figure class="review" data-reveal>
+            <span class="review__stars" role="img" aria-label="Note : 5 sur 5"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span>
+            <blockquote><p>«&nbsp;Voyant moteur allumé un vendredi soir. Diagnostic le lundi à 8&nbsp;h&nbsp;30, voiture rendue à midi. Le prix annoncé au téléphone, c’est celui que j’ai payé.&nbsp;»</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">NR</span><span><span class="review__name">Nathalie R.</span><span class="review__car">Peugeot 308 · Cesson-Sévigné</span></span></figcaption>
+          </figure>
+          <figure class="review" data-reveal>
+            <span class="review__stars" role="img" aria-label="Note : 5 sur 5"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span>
+            <blockquote><p>«&nbsp;Distribution faite sur ma Clio pour nettement moins que le devis de la concession, avec le carnet tamponné. Et la voiture de prêt m’attendait à mon arrivée.&nbsp;»</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">YL</span><span><span class="review__name">Yann L.</span><span class="review__car">Renault Clio IV · Chantepie</span></span></figcaption>
+          </figure>
+          <figure class="review" data-reveal>
+            <span class="review__stars" role="img" aria-label="Note : 5 sur 5"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span>
+            <blockquote><p>«&nbsp;Ils m’ont montré mes plaquettes usées et m’ont dit que les disques pouvaient encore tenir un an. Un garage qui ne pousse pas à la dépense, je n’en change plus.&nbsp;»</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">KB</span><span><span class="review__name">Karim B.</span><span class="review__car">Dacia Duster · Saint-Grégoire</span></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRACTICAL INFO ========== -->
+    <section class="section" id="infos" aria-labelledby="infos-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">05</span>Infos pratiques</p>
+            <h2 id="infos-title">Horaires, accès et paiement</h2>
+          </div>
+          <p class="section-head__text">L’atelier est dans la zone artisanale de la Croix-Forgeron, à 5&nbsp;minutes de la rocade, avec un parking réservé aux clients.</p>
+        </div>
+
+        <div class="infos">
+          <div class="infos__col">
+            <h3 class="infos__title"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Horaires</h3>
+            <p class="status status--light" data-status>Lun–ven 8h–18h30</p>
+            <table class="hours">
+              <caption class="visually-hidden">Horaires d’ouverture de l’atelier</caption>
+              <tbody>
+                <tr data-day="1"><th scope="row">Lundi</th><td>8h – 12h · 13h30 – 18h30</td></tr>
+                <tr data-day="2"><th scope="row">Mardi</th><td>8h – 12h · 13h30 – 18h30</td></tr>
+                <tr data-day="3"><th scope="row">Mercredi</th><td>8h – 12h · 13h30 – 18h30</td></tr>
+                <tr data-day="4"><th scope="row">Jeudi</th><td>8h – 12h · 13h30 – 18h30</td></tr>
+                <tr data-day="5"><th scope="row">Vendredi</th><td>8h – 12h · 13h30 – 18h30</td></tr>
+                <tr data-day="6"><th scope="row">Samedi</th><td>8h – 12h</td></tr>
+                <tr data-day="0" class="is-closed"><th scope="row">Dimanche</th><td>Fermé</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="map-card">
+            <svg class="map-card__map" viewBox="0 0 400 230" aria-hidden="true" focusable="false">
+              <defs>
+                <pattern id="map-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#2A2E35" stroke-width="1"/></pattern>
+              </defs>
+              <rect width="400" height="230" fill="#202328"/>
+              <rect width="400" height="230" fill="url(#map-grid)"/>
+              <path d="M-20 196C70 160 128 176 206 132S330 40 420 58" fill="none" stroke="#3A4049" stroke-width="16"/>
+              <path d="M-20 196C70 160 128 176 206 132S330 40 420 58" fill="none" stroke="#5B616B" stroke-width="1.5" stroke-dasharray="10 10"/>
+              <path d="M84 -10 150 240M0 84h400M262 -10l-30 250" fill="none" stroke="#30353D" stroke-width="7"/>
+              <rect x="176" y="146" width="132" height="62" fill="#2A2E35" stroke="#3A4049"/>
+              <text x="186" y="198" class="map-label">ZA Croix-Forgeron</text>
+              <text x="300" y="44" class="map-label">Rocade</text>
+              <circle class="map-pulse" cx="232" cy="154" r="20" fill="#F26B1D" opacity=".18"/>
+              <path d="M232 160s-13-11.2-13-22a13 13 0 0 1 26 0c0 10.8-13 22-13 22z" fill="#F26B1D"/>
+              <circle cx="232" cy="137" r="4.6" fill="#1C1F24"/>
+            </svg>
+            <div class="map-card__body">
+              <h3 class="infos__title infos__title--light"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Adresse</h3>
+              <address>
+                <strong>Garage Lefèvre</strong><br>
+                8 allée des Carrossiers<br>
+                ZA de la Croix-Forgeron, 35000 Rennes
+              </address>
+              <p class="map-card__contact">
+                <a href="tel:+33261914720"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>02 61 91 47 20</a>
+                <a href="mailto:contact@garage-lefevre.example"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>contact@garage-lefevre.example</a>
+              </p>
+              <a class="btn btn--primary btn--block" href="https://www.google.com/maps/search/?api=1&amp;query=8%20all%C3%A9e%20des%20Carrossiers%2C%2035000%20Rennes" target="_blank" rel="noopener">Voir l’itinéraire <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg><span class="visually-hidden"> (ouvre Google Maps dans un nouvel onglet)</span></a>
+            </div>
+          </div>
+
+          <div class="infos__col">
+            <h3 class="infos__title"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M9.5 17V7.5h3.3a2.9 2.9 0 0 1 0 5.8H9.5"/></g></svg>Accès et parking</h3>
+            <ul class="info-list">
+              <li>Parking clients gratuit de 12 places devant l’atelier.</li>
+              <li>Boîte à clés sécurisée pour déposer ou récupérer la voiture en dehors des horaires.</li>
+              <li>Arrêt de bus à 4&nbsp;minutes à pied, pratique si vous repartez sans véhicule.</li>
+            </ul>
+
+            <h3 class="infos__title infos__title--spaced"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="2"/><path d="M2.5 10h19M6.5 14.5h4"/></g></svg>Paiement</h3>
+            <ul class="pills pills--small">
+              <li class="pill">Carte bancaire</li><li class="pill">Sans contact</li><li class="pill">Espèces</li><li class="pill">Chèque</li><li class="pill">Virement</li><li class="pill pill--accent">3× ou 4× sans frais dès 300&nbsp;€</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section section--steel" id="faq" aria-labelledby="faq-title">
+      <div class="container faq">
+        <div class="faq__intro">
+          <p class="eyebrow"><span class="eyebrow__num">06</span>FAQ</p>
+          <h2 id="faq-title">Questions fréquentes</h2>
+          <p class="faq__text">Une autre question sur votre voiture&nbsp;? Le plus simple est de nous appeler, on répond directement depuis l’atelier.</p>
+          <a class="btn btn--dark" href="tel:+33261914720"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>02 61 91 47 20</a>
+        </div>
+
+        <div class="faq__list">
+          <details>
+            <summary>Quels sont vos délais&nbsp;?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer">
+              <p>Comptez en général 48 à 72&nbsp;h pour un rendez-vous d’entretien. La plupart des vidanges, freinages et recharges de clim sont rendus le jour même. Pour un voyant allumé ou un bruit inquiétant, appelez-nous&nbsp;: on trouve presque toujours un créneau de diagnostic dans la journée ou le lendemain.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Ma voiture est sous garantie&nbsp;: puis-je faire l’entretien chez vous&nbsp;?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer">
+              <p>Oui. Depuis le règlement européen n°&nbsp;461/2010, vous pouvez faire entretenir votre véhicule hors du réseau de la marque sans perdre la garantie constructeur, à condition de respecter le plan d’entretien et d’utiliser des pièces de qualité équivalente. C’est ce que nous faisons&nbsp;: nous suivons les préconisations du constructeur, tamponnons votre carnet et vous remettons une facture détaillée à conserver.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Le devis est-il vraiment gratuit&nbsp;?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer">
+              <p>Oui, le devis est gratuit et sans engagement. Seul le diagnostic électronique (49&nbsp;€) est facturé quand il est nécessaire pour trouver la panne, et il est déduit de la facture si vous faites la réparation chez nous. Aucun travail supplémentaire n’est fait sans votre accord.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Peut-on payer en plusieurs fois&nbsp;?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer">
+              <p>Oui, en 3 ou 4 fois sans frais par carte bancaire à partir de 300&nbsp;€ de facture, sous réserve d’acceptation par l’organisme de financement. Dites-le-nous au moment du devis, tout se fait au comptoir en quelques minutes.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Le véhicule de prêt est-il payant&nbsp;?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer">
+              <p>Il est gratuit pour toute intervention de plus de 300&nbsp;€, sinon 15&nbsp;€ la journée, assurance comprise. Nous en avons trois, il vaut donc mieux le réserver avec le rendez-vous&nbsp;: cochez simplement la case dans le formulaire.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Vous travaillez sur les hybrides et les électriques&nbsp;?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer">
+              <p>Oui pour l’entretien courant, les freins, les pneus, la clim et la géométrie. Deux de nos techniciens sont habilités pour intervenir sur les circuits haute tension.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="logo logo--footer" href="#haut">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M0 0h31l9 9v31H0z" fill="#F26B1D"/><path d="M11 9h6.5v16.5H29V31H11z" fill="#1C1F24"/></svg>
+          </span>
+          <span class="logo__text"><span class="logo__name">Lefèvre</span><span class="logo__tag">Garage · Rennes</span></span>
+        </a>
+        <p>Garage indépendant toutes marques à Rennes depuis 1998. Entretien, réparation, pneus, climatisation et diagnostic.</p>
+        <a class="btn btn--primary btn--sm" href="#rendez-vous">Prendre rendez-vous</a>
+      </div>
+      <div>
+        <p class="footer__title">Contact</p>
+        <address class="footer__list">
+          8 allée des Carrossiers<br>ZA de la Croix-Forgeron<br>35000 Rennes
+        </address>
+        <p class="footer__list">
+          <a href="tel:+33261914720">02 61 91 47 20</a><br>
+          <a href="mailto:contact@garage-lefevre.example">contact@garage-lefevre.example</a>
+        </p>
+      </div>
+      <div>
+        <p class="footer__title">Horaires</p>
+        <p class="footer__list">Lundi au vendredi<br>8h – 12h · 13h30 – 18h30<br>Samedi 8h – 12h<br>Dimanche fermé</p>
+      </div>
+      <div>
+        <p class="footer__title">Le garage</p>
+        <ul class="footer__links">
+          <li><a href="#prestations">Prestations et tarifs</a></li>
+          <li><a href="#atelier">L’atelier</a></li>
+          <li><a href="#rendez-vous">Rendez-vous</a></li>
+          <li><a href="#avis">Avis clients</a></li>
+          <li><a href="#faq">Questions fréquentes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> Garage Lefèvre. Tous droits réservés.</p>
+      <details class="legal">
+        <summary>Mentions légales</summary>
+        <div class="legal__body">
+          <p><strong>Informations de démonstration&nbsp;: cette entreprise n’existe pas.</strong></p>
+          <p>Éditeur&nbsp;: Garage Lefèvre SARL (fictive), au capital de 20&nbsp;000&nbsp;€, 8 allée des Carrossiers, ZA de la Croix-Forgeron, 35000 Rennes. SIRET 000 000 000 00000, RCS Rennes. Directeur de la publication&nbsp;: Mathieu Lefèvre (personnage fictif). Contact&nbsp;: contact@garage-lefevre.example, 02 61 91 47 20.</p>
+          <p>Hébergement&nbsp;: GitHub Pages, GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+          <p>Photographies&nbsp;: Unsplash, sous licence Unsplash. Aucun cookie, aucune mesure d’audience, aucune donnée transmise par le formulaire.</p>
+        </div>
+      </details>
+      <p><a href="https://github.com/sacha9214">Site réalisé par Sacha</a></p>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <a class="btn btn--outline-light" href="tel:+33261914720"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+    <a class="btn btn--primary" href="#rendez-vous">Prendre rendez-vous</a>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

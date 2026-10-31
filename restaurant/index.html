@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le Comptoir des Halles — Bistrot de marché à Nantes</title>
+  <meta name="description" content="Bistrot de marché à deux pas de Talensac, à Nantes : cuisine de saison faite maison, vins nature, formule du midi à 19 € et carte le soir. Fermé dimanche soir et lundi.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1F3B2D">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Le Comptoir des Halles">
+  <meta property="og:title" content="Le Comptoir des Halles — Bistrot de marché à Nantes">
+  <meta property="og:description" content="Cuisine du marché, vins vivants et formule du midi, à deux pas du marché de Talensac.">
+  <meta property="og:url" content="https://sacha9214.github.io/demos/restaurant/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Le Comptoir des Halles",
+    "description": "Bistrot de marché à Nantes : cuisine de saison faite maison, vins nature, formule du midi et carte le soir.",
+    "url": "https://sacha9214.github.io/demos/restaurant/",
+    "image": "https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?auto=format&fit=crop&w=1200&q=70",
+    "telephone": "+33 2 61 91 34 58",
+    "email": "contact@lecomptoirdeshalles.example",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8 rue des Halles-Basses",
+      "postalCode": "44000",
+      "addressLocality": "Nantes",
+      "addressRegion": "Pays de la Loire",
+      "addressCountry": "FR"
+    },
+    "servesCuisine": ["Française", "Cuisine de marché", "Bistrot"],
+    "priceRange": "€€",
+    "acceptsReservations": true,
+    "menu": "https://sacha9214.github.io/demos/restaurant/#carte",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Carte bancaire, Espèces, Titres-restaurant",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "12:00",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "19:30",
+        "closes": "22:30"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- Demo banner -->
+  <div class="demo-banner">
+    <p>Site de démonstration : Le Comptoir des Halles est une entreprise fictive · Photos Unsplash · Réalisé par Sacha <span aria-hidden="true">·</span> <a href="../">Voir les autres exemples</a></p>
+  </div>
+
+  <!-- Sticky header -->
+  <header class="site-header" id="haut">
+    <div class="container header-inner">
+      <a class="wordmark" href="#haut" aria-label="Le Comptoir des Halles, retour en haut de page">
+        <span class="wordmark-name">Le Comptoir <em>des Halles</em></span>
+        <span class="wordmark-sub">Bistrot de marché · Nantes</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#esprit">L'esprit</a></li>
+          <li><a href="#carte">La carte</a></li>
+          <li><a href="#vins">Les vins</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#infos">Infos pratiques</a></li>
+          <li class="nav-cta-mobile"><a href="#reserver">Réserver une table</a></li>
+        </ul>
+        <p class="nav-contact"><a href="tel:+33261913458">02 61 91 34 58</a><span>8 rue des Halles-Basses, Nantes</span></p>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm header-cta" href="#reserver">Réserver</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="nav-toggle-text" aria-hidden="true">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu" tabindex="-1">
+
+    <!-- 1. Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?auto=format&amp;fit=crop&amp;w=1600&amp;q=70"
+             srcset="https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                     https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                     https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                     https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+             sizes="100vw" width="1600" height="2352" fetchpriority="high"
+             alt="Devanture du bistrot à la tombée du jour : guirlandes lumineuses, fleurs suspendues sous l'auvent rayé et chaises de terrasse en rotin.">
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-card">
+          <p class="hero-kicker">Bistrot de marché <span aria-hidden="true">·</span> Nantes<span class="hero-since"> <span aria-hidden="true">·</span> depuis 2019</span></p>
+          <h1 id="hero-title" class="hero-title">Le Comptoir <em>des Halles</em></h1>
+          <svg class="ornament" viewBox="0 0 120 12" aria-hidden="true" focusable="false"><path d="M0 6h50M70 6h50"/><path d="M60 1.5 64.5 6 60 10.5 55.5 6z"/></svg>
+          <p class="hero-promise">Ce que le marché a de meilleur, cuisiné le jour même et servi avec des vins vivants.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#reserver">Réserver une table</a>
+            <a class="btn btn-ghost" href="#carte">Voir la carte</a>
+          </div>
+          <dl class="hero-hours">
+            <div><dt>Déjeuner</dt><dd><span>mar. → dim.</span> <span class="hh-time">12h&nbsp;–&nbsp;14h</span></dd></div>
+            <div><dt>Dîner</dt><dd><span>mar. → sam.</span> <span class="hh-time">19h30&nbsp;–&nbsp;22h30</span></dd></div>
+            <div><dt>Fermé</dt><dd><span>dimanche soir</span> <span>et lundi</span></dd></div>
+          </dl>
+          <p class="hero-status" data-status hidden></p>
+        </div>
+      </div>
+
+      <p class="hero-caption">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        8 rue des Halles-Basses — à deux pas du marché de Talensac
+      </p>
+    </section>
+
+    <!-- 2. L'esprit -->
+    <section class="section esprit" id="esprit" aria-labelledby="esprit-title">
+      <div class="container">
+        <div class="esprit-grid">
+          <div class="esprit-text reveal">
+            <p class="eyebrow"><span class="eyebrow-num">I</span>L'esprit</p>
+            <h2 id="esprit-title" class="h2">Le marché décide, <em>la cuisine suit.</em></h2>
+            <p class="lead dropcap">Chaque matin, avant que la ville ne s'éveille tout à fait, Élise traverse à pied les allées du marché de Talensac. Ce qu'elle en rapporte écrit l'ardoise du midi&nbsp;: une botte de blettes, un merlu de ligne, les premières poires d'un verger de Vertou.</p>
+            <p>Nous avons ouvert le Comptoir en 2019 dans une ancienne crémerie de la rue des Halles-Basses&nbsp;: vingt-huit couverts, un long zinc, une cuisine ouverte sur la salle. Hugo s'occupe de l'accueil et de la cave, avec un faible assumé pour les vignerons du Val de Loire.</p>
+            <p>Ici, pas de chichis. On prend le temps de bien manger, de bien boire, et l'on revient.</p>
+            <p class="signature">Élise Moreau <span>&amp;</span> Hugo Le Gall</p>
+          </div>
+
+          <figure class="esprit-photo reveal">
+            <div class="frame">
+              <img src="https://images.unsplash.com/photo-1577219492769-b63a779fac28?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+                   srcset="https://images.unsplash.com/photo-1577219492769-b63a779fac28?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                           https://images.unsplash.com/photo-1577219492769-b63a779fac28?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                           https://images.unsplash.com/photo-1577219492769-b63a779fac28?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                           https://images.unsplash.com/photo-1577219492769-b63a779fac28?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+                   sizes="(min-width: 1024px) 40vw, 100vw" width="1600" height="2336" loading="lazy"
+                   alt="En cuisine, sous les suspensions en cuivre, la brigade dresse les assiettes du service.">
+            </div>
+            <figcaption>Le passe, un vendredi soir. La cuisine est ouverte sur la salle.</figcaption>
+          </figure>
+        </div>
+
+        <ul class="values" role="list">
+          <li class="value reveal">
+            <span class="value-num" aria-hidden="true">I</span>
+            <svg class="value-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M5 13h22l-2 12.2a2.5 2.5 0 0 1-2.5 2.1h-13A2.5 2.5 0 0 1 7 25.2L5 13z"/><path d="M10.5 13 14 5.5M21.5 13 18 5.5M12 17.5v6M16 17.5v6M20 17.5v6"/></svg>
+            <h3>Produits du marché</h3>
+            <p>Légumes des maraîchers de la vallée de la Loire, poisson de la criée de La Turballe, volailles de Challans. Nous achetons peu, souvent, et la carte suit l'arrivage.</p>
+          </li>
+          <li class="value reveal">
+            <span class="value-num" aria-hidden="true">II</span>
+            <svg class="value-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M10 4h12l-.6 7.5a5.4 5.4 0 0 1-10.8 0L10 4z"/><path d="M16 17v10M11 27.5h10M10.5 9h11"/></svg>
+            <h3>Vins nature</h3>
+            <p>Une cave de cent vingt références, en bio ou en biodynamie, choisies chez des vignerons que nous connaissons. Peu de soufre, beaucoup de caractère.</p>
+          </li>
+          <li class="value reveal">
+            <span class="value-num" aria-hidden="true">III</span>
+            <svg class="value-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M5 14h22v5a8 8 0 0 1-8 8h-6a8 8 0 0 1-8-8v-5z"/><path d="M3 14h26M12 9.5c0-1.5 1.5-1.5 1.5-3S12 5 12 5M18 9.5c0-1.5 1.5-1.5 1.5-3S18 5 18 5"/></svg>
+            <h3>Fait maison</h3>
+            <p>Du pain au levain aux glaces, des fonds de sauce aux terrines&nbsp;: tout est préparé ici, chaque jour. C'est plus long, et c'est meilleur.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. La carte -->
+    <section class="section carte" id="carte" aria-labelledby="carte-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-num">II</span>La carte</p>
+            <h2 id="carte-title" class="h2">La carte <em>&amp; l'ardoise</em></h2>
+          </div>
+          <p class="section-intro">Elle change avec les saisons&nbsp;; l'ardoise, elle, change chaque jour. Servie le midi comme le soir, en plus de la formule du déjeuner.</p>
+        </header>
+
+        <div class="carte-grid">
+          <article class="menu-sheet reveal" aria-label="Carte d'automne">
+            <div class="sheet-head">
+              <p class="sheet-kicker">Le Comptoir des Halles</p>
+              <p class="sheet-title">Automne</p>
+              <p class="sheet-sub">Octobre — décembre 2026</p>
+              <svg class="ornament" viewBox="0 0 120 12" aria-hidden="true" focusable="false"><path d="M0 6h50M70 6h50"/><path d="M60 1.5 64.5 6 60 10.5 55.5 6z"/></svg>
+            </div>
+
+            <div class="menu-group">
+              <h3 class="menu-cat">Entrées</h3>
+              <ul class="dishes" role="list">
+                <li class="dish"><p class="dish-line"><span class="dish-name">Velouté de potimarron</span><span class="leader" aria-hidden="true"></span><span class="dish-price">9&nbsp;€</span></p><p class="dish-desc">noisettes torréfiées, crème crue de la ferme <abbr class="tag" title="Végétarien">V</abbr></p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Œuf parfait, champignons des bois</span><span class="leader" aria-hidden="true"></span><span class="dish-price">12&nbsp;€</span></p><p class="dish-desc">émulsion au lard fumé, pain de campagne grillé</p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Poireaux vinaigrette</span><span class="leader" aria-hidden="true"></span><span class="dish-price">10&nbsp;€</span></p><p class="dish-desc">œuf mimosa, noisettes, herbes du jardin <abbr class="tag" title="Végétarien">V</abbr></p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Huîtres de Bouin n°&nbsp;3, les six</span><span class="leader" aria-hidden="true"></span><span class="dish-price">16&nbsp;€</span></p><p class="dish-desc">mignonnette à l'échalote, pain de seigle et beurre demi-sel</p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Terrine de campagne maison</span><span class="leader" aria-hidden="true"></span><span class="dish-price">11&nbsp;€</span></p><p class="dish-desc">pickles d'oignons rouges, moutarde à l'ancienne</p></li>
+              </ul>
+            </div>
+
+            <div class="menu-group">
+              <h3 class="menu-cat">Plats</h3>
+              <ul class="dishes" role="list">
+                <li class="dish"><p class="dish-line"><span class="dish-name">Merlu de ligne, beurre blanc nantais</span><span class="leader" aria-hidden="true"></span><span class="dish-price">26&nbsp;€</span></p><p class="dish-desc">poireaux fondants, pommes de terre de Noirmoutier</p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Volaille fermière de Challans</span><span class="leader" aria-hidden="true"></span><span class="dish-price">27&nbsp;€</span></p><p class="dish-desc">rôtie sur le coffre, jus corsé, potimarron et marrons</p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Joue de bœuf braisée au vin rouge</span><span class="leader" aria-hidden="true"></span><span class="dish-price">25&nbsp;€</span></p><p class="dish-desc">purée de céleri, carottes glacées, persil plat</p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Risotto d'épeautre aux cèpes</span><span class="leader" aria-hidden="true"></span><span class="dish-price">22&nbsp;€</span></p><p class="dish-desc">vieux comté, jeunes pousses, huile de noisette <abbr class="tag" title="Végétarien">V</abbr></p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Onglet de bœuf, échalotes confites</span><span class="leader" aria-hidden="true"></span><span class="dish-price">28&nbsp;€</span></p><p class="dish-desc">frites maison au blanc de bœuf, salade de saison</p></li>
+              </ul>
+            </div>
+
+            <div class="menu-group">
+              <h3 class="menu-cat">Desserts</h3>
+              <ul class="dishes" role="list">
+                <li class="dish"><p class="dish-line"><span class="dish-name">Gâteau nantais</span><span class="leader" aria-hidden="true"></span><span class="dish-price">9&nbsp;€</span></p><p class="dish-desc">au rhum ambré, glaçage au sucre, crème crue</p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Poire pochée au vin épicé</span><span class="leader" aria-hidden="true"></span><span class="dish-price">10&nbsp;€</span></p><p class="dish-desc">sablé breton, crème glacée à la vanille</p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Tarte fine aux pommes</span><span class="leader" aria-hidden="true"></span><span class="dish-price">10&nbsp;€</span></p><p class="dish-desc">caramel au beurre salé, fleur de sel de Guérande</p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Mousse au chocolat noir</span><span class="leader" aria-hidden="true"></span><span class="dish-price">8&nbsp;€</span></p><p class="dish-desc">grué de cacao, servie à la cuillère</p></li>
+                <li class="dish"><p class="dish-line"><span class="dish-name">Le Curé nantais affiné</span><span class="leader" aria-hidden="true"></span><span class="dish-price">11&nbsp;€</span></p><p class="dish-desc">et fromages de la semaine, confiture de figues</p></li>
+              </ul>
+            </div>
+
+            <p class="sheet-foot"><abbr class="tag" title="Végétarien">V</abbr> végétarien · Prix nets, service compris · Viandes d'origine France · Liste des allergènes sur demande</p>
+          </article>
+
+          <aside class="carte-aside" aria-label="Ardoise du jour et formule du midi">
+            <article class="ardoise reveal">
+              <p class="ardoise-kicker">Ce midi, selon le marché</p>
+              <h3 class="ardoise-title">L'ardoise du jour</h3>
+              <ul class="ardoise-list" role="list">
+                <li><span class="ardoise-label">Entrée</span>Salade de lentilles vertes, haddock fumé, œuf mollet</li>
+                <li><span class="ardoise-label">Plat</span>Lieu jaune de La Turballe, choux de Bruxelles, beurre noisette</li>
+                <li><span class="ardoise-label">Dessert</span>Riz au lait vanillé, caramel au beurre salé</li>
+              </ul>
+              <p class="ardoise-note">Plat du jour seul&nbsp;: 15&nbsp;€</p>
+            </article>
+
+            <article class="formule reveal">
+              <h3 class="formule-title">Formule du midi</h3>
+              <p class="formule-when">Du mardi au vendredi, hors jours fériés</p>
+              <dl class="formule-prices">
+                <div><dt>Entrée + plat <span>ou plat + dessert</span></dt><dd>19&nbsp;€</dd></div>
+                <div><dt>Entrée + plat + dessert</dt><dd>23&nbsp;€</dd></div>
+              </dl>
+              <p class="formule-note">Composée à partir de l'ardoise du jour. Café ou thé&nbsp;: 2,50&nbsp;€.</p>
+              <a class="link-arrow" href="#reserver">Réserver pour le déjeuner <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Les vins -->
+    <section class="section vins" id="vins" aria-labelledby="vins-title">
+      <div class="container vins-grid">
+        <div class="vins-aside">
+        <figure class="vins-photo reveal">
+          <img src="https://images.unsplash.com/photo-1764874299343-e55d7af327cd?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+               srcset="https://images.unsplash.com/photo-1764874299343-e55d7af327cd?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                       https://images.unsplash.com/photo-1764874299343-e55d7af327cd?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                       https://images.unsplash.com/photo-1764874299343-e55d7af327cd?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                       https://images.unsplash.com/photo-1764874299343-e55d7af327cd?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+               sizes="(min-width: 1024px) 42vw, 100vw" width="1600" height="2400" loading="lazy"
+               alt="Une bouteille de vin rouge et des verres à pied sur une nappe couleur sable, couverts dressés.">
+          <figcaption>Cent vingt références, presque toutes de Loire.</figcaption>
+        </figure>
+        <div class="coup-de-coeur reveal">
+          <p class="cdc-kicker">Le coup de cœur d'Hugo</p>
+          <p class="cdc-wine">Muscadet «&nbsp;Clos de la Sanguèze&nbsp;» 2023</p>
+          <p class="cdc-note">Tendu, salin, une finale d'agrume&nbsp;: le compagnon idéal des huîtres de Bouin et du merlu au beurre blanc.</p>
+        </div>
+        </div>
+
+        <div class="vins-text">
+          <div class="vins-intro reveal">
+            <p class="eyebrow eyebrow--light"><span class="eyebrow-num">III</span>Les vins</p>
+            <h2 id="vins-title" class="h2">Des vins vivants, <em>choisis chez le vigneron.</em></h2>
+            <p>Hugo sélectionne des vins travaillés en bio ou en biodynamie, avec peu ou pas de soufre ajouté. Surtout de Loire, du Muscadet à la Touraine, et toujours chez des gens rencontrés. Des vins francs et digestes, qui accompagnent la cuisine sans la couvrir. Dites-nous ce que vous aimez&nbsp;: on ouvre volontiers une bouteille pour un verre.</p>
+          </div>
+
+          <table class="wine-table reveal">
+            <caption class="visually-hidden">Sélection de vins au verre et à la bouteille</caption>
+            <thead>
+              <tr><th scope="col">La sélection du moment</th><th scope="col">Verre <span>12 cl</span></th><th scope="col">Bouteille <span>75 cl</span></th></tr>
+            </thead>
+            <tbody>
+              <tr class="wine-group"><th scope="colgroup" colspan="3">Bulles</th></tr>
+              <tr><th scope="row"><span class="wine-name">Pét-nat de chenin «&nbsp;Petites Bulles&nbsp;»</span><span class="wine-meta">Vin de France, Anjou — Domaine des Grands-Clos</span></th><td>7&nbsp;€</td><td>36&nbsp;€</td></tr>
+              <tr class="wine-group"><th scope="colgroup" colspan="3">Blancs &amp; macération</th></tr>
+              <tr><th scope="row"><span class="wine-name">Muscadet Sèvre-et-Maine sur lie</span><span class="wine-meta">Clos de la Sanguèze — melon de Bourgogne</span></th><td>6&nbsp;€</td><td>29&nbsp;€</td></tr>
+              <tr><th scope="row"><span class="wine-name">Anjou blanc «&nbsp;Schistes&nbsp;»</span><span class="wine-meta">Domaine du Puits-Bertin — chenin</span></th><td>8&nbsp;€</td><td>39&nbsp;€</td></tr>
+              <tr><th scope="row"><span class="wine-name">Grolleau gris macéré «&nbsp;Peau d'Orange&nbsp;»</span><span class="wine-meta">Vin de France — vin orange</span></th><td>7,50&nbsp;€</td><td>37&nbsp;€</td></tr>
+              <tr class="wine-group"><th scope="colgroup" colspan="3">Rouges</th></tr>
+              <tr><th scope="row"><span class="wine-name">Gamay de Touraine «&nbsp;Glou-Glou&nbsp;»</span><span class="wine-meta">Domaine de la Frênaie — servi frais</span></th><td>6,50&nbsp;€</td><td>31&nbsp;€</td></tr>
+              <tr><th scope="row"><span class="wine-name">Saumur-Champigny</span><span class="wine-meta">Domaine de la Perrière-Haute — cabernet franc</span></th><td>8&nbsp;€</td><td>42&nbsp;€</td></tr>
+            </tbody>
+          </table>
+
+          <p class="vins-note reveal">Carafe de 50 cl à partir de 19&nbsp;€. Toutes nos bouteilles sont aussi à emporter, au prix caviste.</p>
+          <p class="vins-legal">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Galerie -->
+    <section class="section galerie" id="galerie" aria-labelledby="galerie-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-num">IV</span>Galerie</p>
+            <h2 id="galerie-title" class="h2">La salle, <em>les assiettes.</em></h2>
+          </div>
+          <p class="section-intro">Vingt-huit couverts, un long zinc et la lumière basse du soir. Sélectionnez une photo pour l'agrandir.</p>
+        </header>
+
+        <ul class="gallery" role="list">
+          <li class="g-item g-big reveal">
+            <a href="https://images.unsplash.com/photo-1776763255189-3c8237aec808?auto=format&amp;fit=crop&amp;w=1800&amp;q=75">
+              <img src="https://images.unsplash.com/photo-1776763255189-3c8237aec808?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+                   srcset="https://images.unsplash.com/photo-1776763255189-3c8237aec808?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                           https://images.unsplash.com/photo-1776763255189-3c8237aec808?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                           https://images.unsplash.com/photo-1776763255189-3c8237aec808?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                           https://images.unsplash.com/photo-1776763255189-3c8237aec808?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+                   sizes="(min-width: 1024px) 50vw, 100vw" width="1600" height="1066" loading="lazy"
+                   alt="La salle aux murs ocre : banquettes en velours rouille, tables en bois dressées et grandes fenêtres cintrées.">
+              <span class="g-zoom" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            </a>
+          </li>
+          <li class="g-item reveal">
+            <a href="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;w=1800&amp;q=75">
+              <img src="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;w=800&amp;q=70"
+                   srcset="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                           https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                           https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                           https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+                   sizes="(min-width: 1024px) 25vw, 50vw" width="1600" height="1600" loading="lazy"
+                   alt="Le chef nappe de sauce une pièce de viande dressée sur une assiette blanche, sur fond sombre.">
+              <span class="g-zoom" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            </a>
+          </li>
+          <li class="g-item g-tall reveal">
+            <a href="https://images.unsplash.com/photo-1761095596755-99ba58997720?auto=format&amp;fit=crop&amp;w=1800&amp;q=75">
+              <img src="https://images.unsplash.com/photo-1761095596755-99ba58997720?auto=format&amp;fit=crop&amp;w=800&amp;q=70"
+                   srcset="https://images.unsplash.com/photo-1761095596755-99ba58997720?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                           https://images.unsplash.com/photo-1761095596755-99ba58997720?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                           https://images.unsplash.com/photo-1761095596755-99ba58997720?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                           https://images.unsplash.com/photo-1761095596755-99ba58997720?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+                   sizes="(min-width: 1024px) 25vw, 50vw" width="1600" height="2400" loading="lazy"
+                   alt="Le chef désigne du doigt une assiette de fruits de mer finement dressée, posée sur le comptoir en bois.">
+              <span class="g-zoom" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            </a>
+          </li>
+          <li class="g-item reveal">
+            <a href="https://images.unsplash.com/photo-1614822283221-92abecbbc659?auto=format&amp;fit=crop&amp;w=1800&amp;q=75">
+              <img src="https://images.unsplash.com/photo-1614822283221-92abecbbc659?auto=format&amp;fit=crop&amp;w=800&amp;q=70"
+                   srcset="https://images.unsplash.com/photo-1614822283221-92abecbbc659?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                           https://images.unsplash.com/photo-1614822283221-92abecbbc659?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                           https://images.unsplash.com/photo-1614822283221-92abecbbc659?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                           https://images.unsplash.com/photo-1614822283221-92abecbbc659?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+                   sizes="(min-width: 1024px) 25vw, 50vw" width="1600" height="1066" loading="lazy"
+                   alt="Tartine de pain grillé, œuf poché et jeunes pousses sur une assiette blanche, au bord d'une table en bois.">
+              <span class="g-zoom" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            </a>
+          </li>
+          <li class="g-item g-tall reveal">
+            <a href="https://images.unsplash.com/photo-1602232037779-30b01ac3c457?auto=format&amp;fit=crop&amp;w=1800&amp;q=75">
+              <img src="https://images.unsplash.com/photo-1602232037779-30b01ac3c457?auto=format&amp;fit=crop&amp;w=800&amp;q=70"
+                   srcset="https://images.unsplash.com/photo-1602232037779-30b01ac3c457?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                           https://images.unsplash.com/photo-1602232037779-30b01ac3c457?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                           https://images.unsplash.com/photo-1602232037779-30b01ac3c457?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                           https://images.unsplash.com/photo-1602232037779-30b01ac3c457?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+                   sizes="(min-width: 1024px) 25vw, 50vw" width="1600" height="2400" loading="lazy"
+                   alt="Le fond de salle en pénombre : tables en bois clair, chaises tressées et bouquets de branchages.">
+              <span class="g-zoom" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            </a>
+          </li>
+          <li class="g-item g-wide reveal">
+            <a href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1800&amp;q=75">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+                   srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                           https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                           https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                           https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+                   sizes="(min-width: 1024px) 50vw, 100vw" width="1600" height="1066" loading="lazy"
+                   alt="Une assiette dressée au milieu d'une tablée animée, verres de vin blanc et corbeille de pain à la lueur des bougies.">
+              <span class="g-zoom" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            </a>
+          </li>
+          <li class="g-item g-tall reveal">
+            <a href="https://images.unsplash.com/photo-1611765083444-a3ce30f1c885?auto=format&amp;fit=crop&amp;w=1800&amp;q=75">
+              <img src="https://images.unsplash.com/photo-1611765083444-a3ce30f1c885?auto=format&amp;fit=crop&amp;w=800&amp;q=70"
+                   srcset="https://images.unsplash.com/photo-1611765083444-a3ce30f1c885?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                           https://images.unsplash.com/photo-1611765083444-a3ce30f1c885?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                           https://images.unsplash.com/photo-1611765083444-a3ce30f1c885?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                           https://images.unsplash.com/photo-1611765083444-a3ce30f1c885?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+                   sizes="(min-width: 1024px) 25vw, 50vw" width="1600" height="2000" loading="lazy"
+                   alt="Deux convives trinquent avec des verres de vin rouge au-dessus d'une table garnie de plats à partager.">
+              <span class="g-zoom" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            </a>
+          </li>
+          <li class="g-item g-wide reveal">
+            <a href="https://images.unsplash.com/photo-1671522635398-a2443699d32e?auto=format&amp;fit=crop&amp;w=1800&amp;q=75">
+              <img src="https://images.unsplash.com/photo-1671522635398-a2443699d32e?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+                   srcset="https://images.unsplash.com/photo-1671522635398-a2443699d32e?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                           https://images.unsplash.com/photo-1671522635398-a2443699d32e?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                           https://images.unsplash.com/photo-1671522635398-a2443699d32e?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                           https://images.unsplash.com/photo-1671522635398-a2443699d32e?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+                   sizes="(min-width: 1024px) 50vw, 100vw" width="1600" height="2000" loading="lazy"
+                   alt="Une assiette creuse d'œufs, lard grillé et jeunes pousses, posée sur une table en bois sombre.">
+              <span class="g-zoom" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Réserver -->
+    <section class="section reserver" id="reserver" aria-labelledby="reserver-title">
+      <div class="container reserver-grid">
+        <div class="reserver-text reveal">
+          <p class="eyebrow"><span class="eyebrow-num">V</span>Réserver</p>
+          <h2 id="reserver-title" class="h2">Réserver <em>une table</em></h2>
+          <p>Réservez en ligne jusqu'à la veille au soir&nbsp;; pour le jour même, un coup de fil suffit. Nous gardons toujours quelques places au comptoir pour celles et ceux qui passent sans prévenir.</p>
+
+          <dl class="reserver-hours">
+            <div><dt>Déjeuner</dt><dd>du mardi au dimanche, 12h&nbsp;–&nbsp;14h</dd></div>
+            <div><dt>Dîner</dt><dd>du mardi au samedi, 19h30&nbsp;–&nbsp;22h30</dd></div>
+            <div><dt>Fermé</dt><dd>le dimanche soir et le lundi</dd></div>
+          </dl>
+
+          <div class="call-box">
+            <p class="call-box-title">Au-delà de 10 personnes, appelez-nous</p>
+            <p>Grandes tablées, privatisation de la salle ou repas d'équipe&nbsp;: nous construisons un menu avec vous.</p>
+            <a class="call-box-phone" href="tel:+33261913458">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 5.3 5.3l1.4-2.2L19 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
+              02 61 91 34 58
+            </a>
+          </div>
+        </div>
+
+        <div class="booking reveal">
+          <form class="booking-form" id="booking-form" novalidate>
+            <p class="booking-kicker">Demande de réservation</p>
+            <p class="form-required-note">Tous les champs sont obligatoires, sauf mention contraire.</p>
+
+            <div class="form-grid">
+              <div class="field" data-field="date">
+                <label for="f-date">Date</label>
+                <input type="date" id="f-date" name="date" required aria-describedby="hint-date err-date">
+                <p class="field-hint" id="hint-date">Du mardi au dimanche midi</p>
+                <p class="field-error" id="err-date"></p>
+              </div>
+
+              <fieldset class="field" data-field="service">
+                <legend>Service</legend>
+                <div class="segmented">
+                  <input type="radio" id="f-dejeuner" name="service" value="dejeuner" aria-describedby="err-service">
+                  <label for="f-dejeuner">Déjeuner</label>
+                  <input type="radio" id="f-diner" name="service" value="diner" aria-describedby="err-service">
+                  <label for="f-diner">Dîner</label>
+                </div>
+                <p class="field-error" id="err-service"></p>
+              </fieldset>
+
+              <div class="field" data-field="creneau">
+                <label for="f-creneau">Heure d'arrivée</label>
+                <div class="select-wrap">
+                  <select id="f-creneau" name="creneau" required disabled aria-describedby="err-creneau">
+                    <option value="">Choisissez un service</option>
+                  </select>
+                </div>
+                <p class="field-error" id="err-creneau"></p>
+              </div>
+
+              <div class="field" data-field="couverts">
+                <label for="f-couverts">Couverts</label>
+                <div class="select-wrap">
+                  <select id="f-couverts" name="couverts" required aria-describedby="hint-couverts err-couverts">
+                    <option value="">Nombre de personnes</option>
+                    <option value="1">1 personne</option>
+                    <option value="2">2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">4 personnes</option>
+                    <option value="5">5 personnes</option>
+                    <option value="6">6 personnes</option>
+                    <option value="7">7 personnes</option>
+                    <option value="8">8 personnes</option>
+                    <option value="9">9 personnes</option>
+                    <option value="10">10 personnes</option>
+                  </select>
+                </div>
+                <p class="field-hint" id="hint-couverts">Au-delà de 10 personnes, appelez-nous.</p>
+                <p class="field-error" id="err-couverts"></p>
+              </div>
+
+              <div class="field" data-field="nom">
+                <label for="f-nom">Nom</label>
+                <input type="text" id="f-nom" name="nom" autocomplete="name" required aria-describedby="err-nom">
+                <p class="field-error" id="err-nom"></p>
+              </div>
+
+              <div class="field" data-field="tel">
+                <label for="f-tel">Téléphone</label>
+                <input type="tel" id="f-tel" name="tel" autocomplete="tel" inputmode="tel" required aria-describedby="err-tel" placeholder="Ex. 06 12 34 56 78">
+                <p class="field-error" id="err-tel"></p>
+              </div>
+
+              <div class="field field--full" data-field="email">
+                <label for="f-email">E-mail <span class="optional">(facultatif)</span></label>
+                <input type="email" id="f-email" name="email" autocomplete="email" aria-describedby="hint-email err-email">
+                <p class="field-hint" id="hint-email">Pour recevoir la confirmation par écrit.</p>
+                <p class="field-error" id="err-email"></p>
+              </div>
+
+              <div class="field field--full" data-field="message">
+                <label for="f-message">Message <span class="optional">(facultatif)</span></label>
+                <textarea id="f-message" name="message" rows="3" maxlength="500" aria-describedby="hint-message err-message"></textarea>
+                <p class="field-hint" id="hint-message">Allergies, anniversaire, poussette, chaise haute…</p>
+                <p class="field-error" id="err-message"></p>
+              </div>
+            </div>
+
+            <div class="form-foot">
+              <button class="btn btn-primary btn-block" type="submit">Envoyer la demande
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+              <p class="form-note">Nous confirmons chaque demande par téléphone ou par e-mail dans l'heure, pendant les services.</p>
+            </div>
+            <p class="visually-hidden" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="booking-success" id="booking-success" tabindex="-1" hidden>
+            <svg class="success-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="22"/><path d="M15 24.5l6 6 12-13"/></svg>
+            <p class="booking-kicker">Demande enregistrée</p>
+            <h3 class="success-title">Merci, <span id="success-name">à bientôt</span>&nbsp;!</h3>
+            <p>Voici le récapitulatif de votre demande. Nous vous rappelons pour la confirmer.</p>
+            <dl class="success-summary" id="success-summary"></dl>
+            <p class="demo-note">Démo : aucune donnée n'a été envoyée.</p>
+            <button class="btn btn-ghost" type="button" id="booking-reset">Faire une autre demande</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Avis -->
+    <section class="section avis" id="avis" aria-labelledby="avis-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow"><span class="eyebrow-num">VI</span>Avis</p>
+          <h2 id="avis-title" class="h2">Ils en parlent <em>mieux que nous.</em></h2>
+        </header>
+        <ul class="quotes" role="list">
+          <li class="reveal">
+            <figure class="quote">
+              <blockquote><p>Le merlu au beurre blanc, une claque. Service attentionné sans être guindé, et Hugo nous a fait découvrir un muscadet incroyable.</p></blockquote>
+              <figcaption><span class="quote-name">Camille R.</span> Dîner à deux, octobre</figcaption>
+            </figure>
+          </li>
+          <li class="reveal">
+            <figure class="quote">
+              <blockquote><p>Notre cantine du mardi midi. La formule est généreuse, l'ardoise change vraiment tous les jours, et on n'a jamais été déçus.</p></blockquote>
+              <figcaption><span class="quote-name">Julien M.</span> Habitué du déjeuner</figcaption>
+            </figure>
+          </li>
+          <li class="reveal">
+            <figure class="quote">
+              <blockquote><p>Petite salle chaleureuse, on s'y sent comme chez des amis. Le gâteau nantais vaut à lui seul le détour.</p></blockquote>
+              <figcaption><span class="quote-name">Hélène T.</span> Déjeuner du dimanche</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8. Infos pratiques -->
+    <section class="section infos" id="infos" aria-labelledby="infos-title">
+      <div class="container infos-grid">
+        <figure class="infos-photo reveal">
+          <img src="https://images.unsplash.com/photo-1614822180018-0620b4250ed1?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+               srcset="https://images.unsplash.com/photo-1614822180018-0620b4250ed1?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w,
+                       https://images.unsplash.com/photo-1614822180018-0620b4250ed1?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                       https://images.unsplash.com/photo-1614822180018-0620b4250ed1?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+                       https://images.unsplash.com/photo-1614822180018-0620b4250ed1?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w"
+               sizes="(min-width: 1024px) 40vw, 100vw" width="1600" height="2400" loading="lazy"
+               alt="La terrasse : tables rondes et chaises en rotin au soleil.">
+          <figcaption>La terrasse, d'avril à fin octobre.</figcaption>
+        </figure>
+
+        <div class="infos-content">
+          <header class="reveal">
+            <p class="eyebrow"><span class="eyebrow-num">VII</span>Nous trouver</p>
+            <h2 id="infos-title" class="h2">Infos <em>pratiques</em></h2>
+          </header>
+
+          <div class="infos-cols">
+            <div class="info-block reveal">
+              <h3>Adresse</h3>
+              <address>
+                8 rue des Halles-Basses<br>44000 Nantes
+              </address>
+              <p class="muted">À deux minutes à pied du marché de Talensac.</p>
+              <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=8%20rue%20des%20Halles-Basses%2C%2044000%20Nantes" target="_blank" rel="noopener">Voir l'itinéraire <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="visually-hidden"> (nouvel onglet)</span></a>
+            </div>
+
+            <div class="info-block reveal">
+              <h3>Contact</h3>
+              <p><a class="text-link" href="tel:+33261913458">02 61 91 34 58</a><br>
+                 <a class="text-link" href="mailto:contact@lecomptoirdeshalles.example">contact@lecomptoirdeshalles.example</a></p>
+              <p class="muted">Le téléphone est plus sûr pendant les services. Paiement par carte bancaire, en espèces et en titres-restaurant le midi.</p>
+            </div>
+
+            <div class="info-block info-block--hours reveal">
+              <h3>Horaires</h3>
+              <table class="hours-table">
+                <caption class="visually-hidden">Horaires d'ouverture</caption>
+                <thead><tr><th scope="col"><span class="visually-hidden">Jour</span></th><th scope="col">Midi</th><th scope="col">Soir</th></tr></thead>
+                <tbody>
+                  <tr data-day="1"><th scope="row">Lundi</th><td class="closed" colspan="2">Fermé</td></tr>
+                  <tr data-day="2"><th scope="row">Mardi</th><td>12h&nbsp;–&nbsp;14h</td><td>19h30&nbsp;–&nbsp;22h30</td></tr>
+                  <tr data-day="3"><th scope="row">Mercredi</th><td>12h&nbsp;–&nbsp;14h</td><td>19h30&nbsp;–&nbsp;22h30</td></tr>
+                  <tr data-day="4"><th scope="row">Jeudi</th><td>12h&nbsp;–&nbsp;14h</td><td>19h30&nbsp;–&nbsp;22h30</td></tr>
+                  <tr data-day="5"><th scope="row">Vendredi</th><td>12h&nbsp;–&nbsp;14h</td><td>19h30&nbsp;–&nbsp;22h30</td></tr>
+                  <tr data-day="6"><th scope="row">Samedi</th><td>12h&nbsp;–&nbsp;14h</td><td>19h30&nbsp;–&nbsp;22h30</td></tr>
+                  <tr data-day="0"><th scope="row">Dimanche</th><td>12h&nbsp;–&nbsp;14h</td><td class="closed">Fermé</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="info-block reveal">
+              <h3>Accès &amp; accessibilité</h3>
+              <ul class="info-list" role="list">
+                <li>Tram 2 et 3, arrêt 50&nbsp;Otages, à 5&nbsp;minutes</li>
+                <li>Parking Talensac à 200&nbsp;m, arceaux vélo devant la porte</li>
+                <li>Salle de plain-pied, accessible en fauteuil roulant, toilettes adaptées</li>
+                <li>Chaises hautes pour les enfants</li>
+              </ul>
+            </div>
+
+            <div class="info-block reveal">
+              <h3>Terrasse</h3>
+              <p>Vingt couverts sur la rue piétonne, d'avril à fin octobre selon la météo. Non réservable&nbsp;: premiers arrivés, premiers servis.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-name">Le Comptoir <em>des Halles</em></p>
+          <p class="footer-tagline">Bistrot de marché, vins vivants. Nantes, depuis 2019.</p>
+          <a class="btn btn-brass" href="#reserver">Réserver une table</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">Adresse</p>
+          <address>8 rue des Halles-Basses<br>44000 Nantes</address>
+          <a class="footer-link" href="https://www.google.com/maps/search/?api=1&amp;query=8%20rue%20des%20Halles-Basses%2C%2044000%20Nantes" target="_blank" rel="noopener">Voir l'itinéraire<span class="visually-hidden"> (nouvel onglet)</span></a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">Horaires</p>
+          <dl class="footer-hours">
+            <div><dt>Déjeuner</dt><dd>mar. → dim. · 12h&nbsp;–&nbsp;14h</dd></div>
+            <div><dt>Dîner</dt><dd>mar. → sam. · 19h30&nbsp;–&nbsp;22h30</dd></div>
+            <div><dt>Fermé</dt><dd>dimanche soir et lundi</dd></div>
+          </dl>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">Contact</p>
+          <p><a class="footer-link" href="tel:+33261913458">02 61 91 34 58</a><br>
+             <a class="footer-link" href="mailto:contact@lecomptoirdeshalles.example">contact@lecomptoirdeshalles.example</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Le Comptoir des Halles</p>
+        <details class="legal">
+          <summary>Mentions légales</summary>
+          <div class="legal-body">
+            <p><strong>Site de démonstration — toutes les informations ci-dessous sont fictives.</strong></p>
+            <p><strong>Éditeur :</strong> Le Comptoir des Halles SAS (entreprise fictive), au capital de 10 000 €, 8 rue des Halles-Basses, 44000 Nantes. SIRET 000 000 000 00000 — RCS Nantes (fictif). Téléphone : 02 61 91 34 58. Directrice de la publication : Élise Moreau.</p>
+            <p><strong>Hébergement :</strong> GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+            <p><strong>Photographies :</strong> Unsplash, sous licence Unsplash. <strong>Données :</strong> ce site ne dépose aucun cookie et le formulaire de réservation n'envoie aucune donnée.</p>
+          </div>
+        </details>
+        <p><a class="footer-link" href="https://github.com/sacha9214">Site réalisé par Sacha</a></p>
+      </div>
+      <p class="footer-legal">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky action bar -->
+  <div class="action-bar" aria-label="Actions rapides">
+    <a class="action-bar-call" href="tel:+33261913458">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 5.3 5.3l1.4-2.2L19 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
+      Appeler
+    </a>
+    <a class="action-bar-book" href="#reserver">Réserver une table</a>
+  </div>
+
+  <!-- Gallery lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo agrandie">
+    <figure class="lightbox-figure" id="lightbox-figure">
+      <!-- The <img> is created by main.js on first open -->
+      <figcaption><span id="lightbox-caption"></span> <span class="lightbox-count" id="lightbox-count"></span></figcaption>
+    </figure>
+    <button class="lightbox-btn lightbox-close" type="button" data-lb="close" aria-label="Fermer">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="lightbox-btn lightbox-prev" type="button" data-lb="prev" aria-label="Photo précédente">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="lightbox-btn lightbox-next" type="button" data-lb="next" aria-label="Photo suivante">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </dialog>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maison Fournier · Boulangerie-pâtisserie au levain, Lyon Croix-Rousse</title>
+  <meta name="description" content="Boulangerie-pâtisserie artisanale à la Croix-Rousse (Lyon 4e) : pains au levain naturel, farines de meuniers de la région, viennoiseries feuilletées maison et pâtisseries de saison. Commande à retirer dès demain.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#FBF5EC">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Maison Fournier">
+  <meta property="og:title" content="Maison Fournier · Boulangerie-pâtisserie au levain, Lyon Croix-Rousse">
+  <meta property="og:description" content="Du levain, du temps et de bonnes farines. Pains, viennoiseries et pâtisseries faits sur place, chaque nuit, à la Croix-Rousse.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1635341814289-55cf1490024c?auto=format&fit=crop&w=1200&h=630&q=70">
+  <meta property="og:url" content="https://sacha9214.github.io/demos/boulangerie/">
+
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Maison Fournier",
+    "description": "Boulangerie-pâtisserie artisanale : pains au levain naturel, farines de meuniers de la région, viennoiseries feuilletées maison et pâtisseries de saison.",
+    "url": "https://sacha9214.github.io/demos/boulangerie/",
+    "image": "https://images.unsplash.com/photo-1635341814289-55cf1490024c?auto=format&fit=crop&w=1200&q=70",
+    "telephone": "+33 4 65 71 28 46",
+    "email": "contact@maison-fournier.example",
+    "priceRange": "€",
+    "servesCuisine": ["Boulangerie", "Viennoiserie", "Pâtisserie"],
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Espèces, carte bancaire, titres-restaurant",
+    "acceptsReservations": false,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 rue des Fileuses",
+      "addressLocality": "Lyon",
+      "postalCode": "69004",
+      "addressRegion": "Auvergne-Rhône-Alpes",
+      "addressCountry": "FR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 45.7746, "longitude": 4.8316 },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=12%20rue%20des%20Fileuses%2C%2069004%20Lyon",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "06:30",
+        "closes": "19:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "06:30",
+        "closes": "13:30"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite (stroke icons, drawn by hand) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-wheat" viewBox="0 0 64 64">
+      <g fill="currentColor">
+        <path d="M32 50c-6.5 0-11-3.6-12-9.6 6.5 0 11 3.6 12 9.6z"/>
+        <path d="M32 50c6.5 0 11-3.6 12-9.6-6.5 0-11 3.6-12 9.6z"/>
+        <path d="M32 40c-6.5 0-11-3.6-12-9.6 6.5 0 11 3.6 12 9.6z"/>
+        <path d="M32 40c6.5 0 11-3.6 12-9.6-6.5 0-11 3.6-12 9.6z"/>
+        <path d="M32 30c-6.5 0-11-3.6-12-9.6 6.5 0 11 3.6 12 9.6z"/>
+        <path d="M32 30c6.5 0 11-3.6 12-9.6-6.5 0-11 3.6-12 9.6z"/>
+        <path d="M32 22c-3.2-3.2-3.2-8.6 0-12.5 3.2 3.9 3.2 9.3 0 12.5z"/>
+      </g>
+      <path d="M32 57V22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.6 4.4-2.1 1.3a11.5 11.5 0 0 0 6.1 6.1l1.3-2.1 4.4 1.6v2.6a2.1 2.1 0 0 1-2.2 2.1A15.6 15.6 0 0 1 4.5 5.7a2.1 2.1 0 0 1 2.1-2.2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-6.8-6-6.8-11.3a6.8 6.8 0 0 1 13.6 0C18.8 15 12 21 12 21z" stroke-linejoin="round"/><circle cx="12" cy="9.6" r="2.4"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></g></symbol>
+    <symbol id="i-metro" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3.5" width="12" height="13" rx="3"/><path d="M6 10.5h12M9.5 13.6h.01M14.5 13.6h.01M8.5 20.5l1.5-4M15.5 20.5l-1.5-4"/></g></symbol>
+    <symbol id="i-cake" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5h17M5 20.5v-6.3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6.3"/><path d="M5 15.6c1.4 1 2.9 1 4.3 0s2.9-1 4.3 0 2.9 1 4.3 0M12 12.2V9"/><path d="M12 9c-1 0-1.6-.7-1.6-1.6 0-1 1.6-3.2 1.6-3.2s1.6 2.2 1.6 3.2c0 .9-.6 1.6-1.6 1.6z"/></g></symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h12v3.3a6 6 0 0 1-6 6 6 6 0 0 1-6-6z"/><path d="M16 10.5h1.6a2.4 2.4 0 0 1 0 4.8H16M8 3.5c-.9 1 .9 2 0 3.2M12 3.5c-.9 1 .9 2 0 3.2"/></g></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5.5v13M5.5 12h13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5.5 12h13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8.5h16M4 15.5h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <p class="demo-banner">
+    Site de démonstration : Maison Fournier est une entreprise fictive · Photos Unsplash · Réalisé par Sacha
+    <a href="../">Voir les autres exemples</a>
+  </p>
+
+  <header class="site-header" id="haut">
+    <div class="container header-inner">
+      <a class="brand" href="#haut" aria-label="Maison Fournier, retour en haut de page">
+        <span class="brand-mark"><svg width="22" height="22" aria-hidden="true"><use href="#i-wheat"/></svg></span>
+        <span class="brand-text">
+          <span class="brand-name">Maison Fournier</span>
+          <span class="brand-sub">Boulangerie · Lyon</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#savoir-faire">Savoir-faire</a></li>
+          <li><a href="#produits">Produits</a></li>
+          <li><a href="#commande">Click &amp; collect</a></li>
+          <li><a href="#salon">Le salon</a></li>
+          <li><a href="#infos">Infos pratiques</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-sm header-cta" href="#commande">Commander</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
+        <svg class="icon-open" width="24" height="24" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon-close" width="24" height="24" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="menu-mobile" hidden>
+      <nav class="container" aria-label="Navigation mobile">
+        <ul>
+          <li><a href="#savoir-faire">Savoir-faire</a></li>
+          <li><a href="#produits">Nos produits</a></li>
+          <li><a href="#commande">Click &amp; collect</a></li>
+          <li><a href="#salon">Le salon</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#infos">Infos pratiques</a></li>
+        </ul>
+        <div class="mobile-menu-foot">
+          <a class="btn" href="#commande">Commander pour demain</a>
+          <p>12 rue des Fileuses, Lyon 4e · <a href="tel:+33465712846">04 65 71 28 46</a></p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" tabindex="-1">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow rise"><span>Maison Fournier<span class="hide-sm"> · Boulangerie-pâtisserie</span> · Croix-Rousse</span></p>
+          <h1 id="hero-title" class="rise">Du levain, du <em>temps</em> et de bonnes farines.</h1>
+          <p class="hero-lead rise">Pains au levain naturel, viennoiseries feuilletées à la main et pâtisseries de saison. Tout est pétri, façonné et cuit sur place, chaque nuit, au fournil de la rue des Fileuses.</p>
+          <div class="hero-actions rise">
+            <a class="btn" href="#commande">Commander pour demain <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#produits">Nos produits</a>
+          </div>
+
+          <div class="today rise">
+            <span class="today-icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-clock"/></svg></span>
+            <div>
+              <p class="today-day" data-today-day>Du mardi au dimanche</p>
+              <p class="today-status"><span class="dot" data-today-dot></span><span data-today-status>6h30 – 19h30 · le dimanche jusqu’à 13h30</span></p>
+              <p class="today-bake" data-today-bake>Baguettes tradition chaudes à 7h, 11h30 et 17h</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-arch">
+            <img src="https://images.unsplash.com/photo-1635341814289-55cf1490024c?auto=format&fit=crop&w=1200&q=70"
+                 srcset="https://images.unsplash.com/photo-1635341814289-55cf1490024c?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1635341814289-55cf1490024c?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1635341814289-55cf1490024c?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1635341814289-55cf1490024c?auto=format&fit=crop&w=1600&q=70 1600w"
+                 sizes="(min-width: 961px) 500px, 88vw" width="1600" height="2000" fetchpriority="high"
+                 alt="Mains de boulanger saupoudrant de farine une miche au levain posée sur une planche, sur fond sombre">
+          </div>
+          <div class="hero-inset">
+            <img src="https://images.unsplash.com/photo-1566698629409-787a68fc5724?auto=format&fit=crop&w=800&q=70"
+                 srcset="https://images.unsplash.com/photo-1566698629409-787a68fc5724?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1566698629409-787a68fc5724?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1566698629409-787a68fc5724?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1566698629409-787a68fc5724?auto=format&fit=crop&w=1600&q=70 1600w"
+                 sizes="(min-width: 961px) 260px, 44vw" width="1600" height="1067"
+                 alt="Corbeille en osier remplie de pains de campagne et de petits pains, avec des épis de blé, sur fond noir">
+          </div>
+          <div class="stamp" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="99" class="stamp-bg"/>
+              <circle cx="100" cy="100" r="54" class="stamp-inner"/>
+              <g class="stamp-ring">
+                <path id="stamp-path" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1-148 0" fill="none"/>
+                <text><textPath href="#stamp-path" textLength="464" lengthAdjust="spacing">LEVAIN NATUREL · FAIT LA NUIT · CROIX-ROUSSE ·&#160;</textPath></text>
+              </g>
+              <use href="#i-wheat" x="74" y="70" width="52" height="58"/>
+            </svg>
+          </div>
+          <p class="hero-caption">Miche de campagne, 48 h de levain</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moving ribbon of products (static under reduced motion) -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <ul class="ribbon-list">
+          <li>Baguette tradition</li><li>Miche au levain</li><li>Croissant pur beurre</li><li>Tarte aux pralines</li><li>Pain aux noix</li><li>Brioche aux pralines</li><li>Flan vanille</li>
+        </ul>
+        <ul class="ribbon-list">
+          <li>Baguette tradition</li><li>Miche au levain</li><li>Croissant pur beurre</li><li>Tarte aux pralines</li><li>Pain aux noix</li><li>Brioche aux pralines</li><li>Flan vanille</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ SAVOIR-FAIRE ============ -->
+    <section class="section craft" id="savoir-faire" aria-labelledby="craft-title">
+      <div class="container">
+        <div class="craft-top">
+          <div class="craft-intro" data-reveal>
+            <p class="eyebrow">Le savoir-faire</p>
+            <h2 id="craft-title">Le bon pain, c’est surtout une affaire de <em>patience</em>.</h2>
+            <p class="lead">Chez nous, on ne court pas après la fournée. Les pâtes lèvent lentement, au levain naturel, avec des farines moulues sur meule par des meuniers que l’on connaît par leur prénom. Tout est fait ici, au fournil, pendant que la Croix-Rousse dort.</p>
+            <figure class="craft-quote">
+              <blockquote><p>« On ne triche pas avec le temps : c’est lui qui donne le goût. »</p></blockquote>
+              <figcaption>Thomas Fournier, artisan boulanger</figcaption>
+            </figure>
+          </div>
+          <div class="craft-baker" data-reveal>
+            <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1200&q=70"
+                 srcset="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1600&q=70 1600w"
+                 sizes="(min-width: 961px) 640px, 92vw" width="1600" height="1067" loading="lazy"
+                 alt="Boulanger pétrissant à la main une boule de pâte sur un plan de travail fariné, à côté d’un rouleau en bois">
+          </div>
+        </div>
+
+        <div class="craft-bottom">
+          <div class="craft-flour" data-reveal>
+            <img src="https://images.unsplash.com/photo-1732565649629-eb4932a1ec09?auto=format&fit=crop&w=1200&q=70"
+                 srcset="https://images.unsplash.com/photo-1732565649629-eb4932a1ec09?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1732565649629-eb4932a1ec09?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1732565649629-eb4932a1ec09?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1732565649629-eb4932a1ec09?auto=format&fit=crop&w=1600&q=70 1600w"
+                 sizes="(min-width: 961px) 480px, 92vw" width="1600" height="2400" loading="lazy"
+                 alt="Boulanger en tablier fleurissant de farine les pâtons posés sur une toile de lin, dans la pénombre du fournil">
+          </div>
+
+          <ol class="points">
+            <li class="point" data-reveal>
+              <p class="point-num">48<span>h</span></p>
+              <div>
+                <h3>Levain naturel</h3>
+                <p>Notre levain est nourri chaque jour depuis l’ouverture, en 2014. Les pâtes fermentent jusqu’à 48 heures : plus de goût, une mie qui se garde, une croûte qui chante en refroidissant.</p>
+              </div>
+            </li>
+            <li class="point" data-reveal>
+              <p class="point-num">80<span>km</span></p>
+              <div>
+                <h3>Des farines de meuniers de la région</h3>
+                <p>Blés de la Dombes, du Beaujolais et du Nord-Isère, moulus sur meule de pierre par trois moulins familiaux, tous à moins de 80 km du fournil. Sans additif, sans améliorant.</p>
+              </div>
+            </li>
+            <li class="point" data-reveal>
+              <p class="point-num">2<span>h</span></p>
+              <div>
+                <h3>Tout est fait sur place, la nuit</h3>
+                <p>À 2 heures du matin, le four s’allume. Pains, croissants feuilletés maison et pâtisseries sortent jusqu’à l’ouverture, à 6h30. Rien n’arrive surgelé, rien n’est réchauffé.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUITS ============ -->
+    <section class="section products" id="produits" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">La boutique</p>
+            <h2 id="products-title">Nos produits</h2>
+            <p class="lead">Ce que vous trouverez chaque jour sur nos étagères. La vitrine des pâtisseries, elle, change avec les saisons.</p>
+          </div>
+          <div class="tablist" role="tablist" aria-label="Familles de produits">
+            <button class="tab" type="button" role="tab" id="tab-pains" aria-controls="panel-pains" aria-selected="true">Pains</button>
+            <button class="tab" type="button" role="tab" id="tab-viennoiseries" aria-controls="panel-viennoiseries" aria-selected="false" tabindex="-1">Viennoiseries</button>
+            <button class="tab" type="button" role="tab" id="tab-patisseries" aria-controls="panel-patisseries" aria-selected="false" tabindex="-1">Pâtisseries</button>
+          </div>
+        </div>
+
+        <!-- Pains -->
+        <div class="tab-panel is-active" id="panel-pains" role="tabpanel" aria-labelledby="tab-pains" tabindex="0">
+          <article class="product">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1677329175333-c08df2a3181d?auto=format&fit=crop&w=800&q=70"
+                   srcset="https://images.unsplash.com/photo-1677329175333-c08df2a3181d?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1677329175333-c08df2a3181d?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1677329175333-c08df2a3181d?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1677329175333-c08df2a3181d?auto=format&fit=crop&w=1600&q=70 1600w"
+                   sizes="(min-width: 961px) 400px, (min-width: 640px) 46vw, 92vw" width="1600" height="2133" loading="lazy"
+                   alt="Baguettes tradition empilées, à la croûte dorée et aux grignes bien ouvertes">
+              <span class="product-tag">La plus demandée</span>
+            </div>
+            <div class="product-body">
+              <div class="product-head"><h3>Baguette tradition</h3><p class="price">1,40 €</p></div>
+              <p>Farine de blé du Nord-Isère, levain liquide et une longue nuit au frais. Croûte fine qui craque, mie crème aux belles alvéoles.</p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1549413468-cd78edb7e75c?auto=format&fit=crop&w=800&q=70"
+                   srcset="https://images.unsplash.com/photo-1549413468-cd78edb7e75c?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1549413468-cd78edb7e75c?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1549413468-cd78edb7e75c?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1549413468-cd78edb7e75c?auto=format&fit=crop&w=1600&q=70 1600w"
+                   sizes="(min-width: 961px) 400px, (min-width: 640px) 46vw, 92vw" width="1600" height="2400" loading="lazy"
+                   alt="Miches de campagne à la croûte farinée, posées sur une toile de jute">
+              <span class="product-tag">Se garde 5 jours</span>
+            </div>
+            <div class="product-body">
+              <div class="product-head"><h3>Miche de campagne</h3><p class="price">4,80 €</p></div>
+              <p>800 g de blé et de seigle bise moulus sur meule, levain naturel et 48 h de fermentation. Un pain de partage au goût légèrement acidulé.</p>
+            </div>
+          </article>
+          <div class="menu-card">
+            <h3 class="menu-title">Aussi au fournil</h3>
+            <ul class="menu-list">
+              <li><div class="mi-row"><span class="mi-name">Demi-baguette tradition</span><span class="mi-leader"></span><span class="mi-price">0,75 €</span></div></li>
+              <li><div class="mi-row"><span class="mi-name">Ficelle aux graines</span><span class="mi-leader"></span><span class="mi-price">1,60 €</span></div><p class="mi-desc">Lin, sésame, tournesol</p></li>
+              <li><div class="mi-row"><span class="mi-name">Pain de seigle 100 %</span><span class="mi-leader"></span><span class="mi-price">4,20 €</span></div><p class="mi-desc">500 g</p></li>
+              <li><div class="mi-row"><span class="mi-name">Pain aux noix &amp; raisins</span><span class="mi-leader"></span><span class="mi-price">4,90 €</span></div><p class="mi-desc">400 g</p></li>
+              <li><div class="mi-row"><span class="mi-name">Grand épeautre au levain</span><span class="mi-leader"></span><span class="mi-price">5,60 €</span></div><p class="mi-desc">500 g, farine de petit producteur drômois</p></li>
+              <li><div class="mi-row"><span class="mi-name">Pain de mie maison</span><span class="mi-leader"></span><span class="mi-price">4,50 €</span></div><p class="mi-desc">Tranché sur demande</p></li>
+              <li><div class="mi-row"><span class="mi-name">Fougasse aux olives</span><span class="mi-leader"></span><span class="mi-price">3,80 €</span></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Viennoiseries -->
+        <div class="tab-panel" id="panel-viennoiseries" role="tabpanel" aria-labelledby="tab-viennoiseries" tabindex="0">
+          <article class="product">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=800&q=70"
+                   srcset="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1600&q=70 1600w"
+                   sizes="(min-width: 961px) 400px, (min-width: 640px) 46vw, 92vw" width="1600" height="1067" loading="lazy"
+                   alt="Croissants pur beurre bien dorés, alignés sur une plaque de cuisson">
+              <span class="product-tag">Beurre AOP</span>
+            </div>
+            <div class="product-body">
+              <div class="product-head"><h3>Croissant pur beurre</h3><p class="price">1,35 €</p></div>
+              <p>Feuilletage maison tourné chaque jour au beurre AOP Charentes-Poitou. Doré, croustillant, et ce goût de beurre qui reste au bout des doigts.</p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1564354273277-c6d4b8532100?auto=format&fit=crop&w=800&q=70"
+                   srcset="https://images.unsplash.com/photo-1564354273277-c6d4b8532100?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1564354273277-c6d4b8532100?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1564354273277-c6d4b8532100?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1564354273277-c6d4b8532100?auto=format&fit=crop&w=1600&q=70 1600w"
+                   sizes="(min-width: 961px) 400px, (min-width: 640px) 46vw, 92vw" width="1600" height="2000" loading="lazy"
+                   alt="Gros plan sur un pain au chocolat feuilleté, vu par la tranche, avec ses barres de chocolat">
+              <span class="product-tag">Sortie à 6h30 et 9h</span>
+            </div>
+            <div class="product-body">
+              <div class="product-head"><h3>Pain au chocolat</h3><p class="price">1,50 €</p></div>
+              <p>Le même feuilletage maison, roulé autour de deux bâtons de chocolat noir à 48 %. À Lyon, on dit pain au chocolat, et on n’en démord pas.</p>
+            </div>
+          </article>
+          <div class="menu-card">
+            <h3 class="menu-title">Aussi au comptoir</h3>
+            <ul class="menu-list">
+              <li><div class="mi-row"><span class="mi-name">Pain aux raisins</span><span class="mi-leader"></span><span class="mi-price">1,80 €</span></div><p class="mi-desc">Crème pâtissière à la vanille</p></li>
+              <li><div class="mi-row"><span class="mi-name">Chausson aux pommes</span><span class="mi-leader"></span><span class="mi-price">2,20 €</span></div><p class="mi-desc">Compote maison, pommes du Pilat</p></li>
+              <li><div class="mi-row"><span class="mi-name">Croissant aux amandes</span><span class="mi-leader"></span><span class="mi-price">2,40 €</span></div></li>
+              <li><div class="mi-row"><span class="mi-name">Brioche aux pralines</span><span class="mi-leader"></span><span class="mi-price">2,90 €</span></div><p class="mi-desc">La part · entière 14,50 €</p></li>
+              <li><div class="mi-row"><span class="mi-name">Brioche nature</span><span class="mi-leader"></span><span class="mi-price">6,80 €</span></div><p class="mi-desc">Tressée, 400 g</p></li>
+              <li><div class="mi-row"><span class="mi-name">Bugnes lyonnaises</span><span class="mi-leader"></span><span class="mi-price">4,50 €</span></div><p class="mi-desc">Les 200 g, de janvier à mars</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pâtisseries -->
+        <div class="tab-panel" id="panel-patisseries" role="tabpanel" aria-labelledby="tab-patisseries" tabindex="0">
+          <article class="product">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1617026061250-62b474264442?auto=format&fit=crop&w=800&q=70"
+                   srcset="https://images.unsplash.com/photo-1617026061250-62b474264442?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1617026061250-62b474264442?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1617026061250-62b474264442?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1617026061250-62b474264442?auto=format&fit=crop&w=1600&q=70 1600w"
+                   sizes="(min-width: 961px) 400px, (min-width: 640px) 46vw, 92vw" width="1600" height="1069" loading="lazy"
+                   alt="Choux garnis de chantilly et de fraises sur un présentoir à gâteaux">
+              <span class="product-tag">Le dessert du dimanche</span>
+            </div>
+            <div class="product-body">
+              <div class="product-head"><h3>Chou chantilly</h3><p class="price">4,50 €</p></div>
+              <p>Pâte à choux craquelin, chantilly montée à la vanille de Madagascar et fruits du moment. Léger, et pourtant très gourmand.</p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1710077717714-976db5604dd7?auto=format&fit=crop&w=800&q=70"
+                   srcset="https://images.unsplash.com/photo-1710077717714-976db5604dd7?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1710077717714-976db5604dd7?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1710077717714-976db5604dd7?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1710077717714-976db5604dd7?auto=format&fit=crop&w=1600&q=70 1600w"
+                   sizes="(min-width: 961px) 400px, (min-width: 640px) 46vw, 92vw" width="1600" height="1067" loading="lazy"
+                   alt="Assortiment de petits gâteaux sur des présentoirs en verre : choux, tartelettes aux fruits et entremets">
+              <span class="product-tag">Change chaque semaine</span>
+            </div>
+            <div class="product-body">
+              <div class="product-head"><h3>Petits gâteaux de saison</h3><p class="price"><small>dès</small> 4,60 €</p></div>
+              <p>Religieuses, tartelettes, entremets individuels : Léa, notre cheffe pâtissière, compose la vitrine au fil des saisons et des fruits du marché.</p>
+            </div>
+          </article>
+          <div class="menu-card">
+            <h3 class="menu-title">Les classiques</h3>
+            <ul class="menu-list">
+              <li><div class="mi-row"><span class="mi-name">Tarte aux pralines</span><span class="mi-leader"></span><span class="mi-price">4,20 €</span></div><p class="mi-desc">La part · entière, 6 parts : 24,00 €</p></li>
+              <li><div class="mi-row"><span class="mi-name">Flan pâtissier vanille</span><span class="mi-leader"></span><span class="mi-price">3,60 €</span></div><p class="mi-desc">La part</p></li>
+              <li><div class="mi-row"><span class="mi-name">Éclair café ou chocolat</span><span class="mi-leader"></span><span class="mi-price">3,90 €</span></div></li>
+              <li><div class="mi-row"><span class="mi-name">Tarte fine aux pommes</span><span class="mi-leader"></span><span class="mi-price">4,40 €</span></div></li>
+              <li><div class="mi-row"><span class="mi-name">Saint-honoré individuel</span><span class="mi-leader"></span><span class="mi-price">5,40 €</span></div></li>
+              <li><div class="mi-row"><span class="mi-name">Gâteau d’anniversaire</span><span class="mi-leader"></span><span class="mi-price"><small>dès</small> 32,00 €</span></div><p class="mi-desc">6 parts, sur commande 48 h à l’avance</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMMANDE (click & collect) ============ -->
+    <section class="section order" id="commande" aria-labelledby="order-title">
+      <div class="container">
+        <div class="order-head" data-reveal>
+          <div>
+            <p class="eyebrow">Click &amp; collect</p>
+            <h2 id="order-title">Commande à retirer</h2>
+          </div>
+          <div>
+            <p class="lead">Réservez vos pains et viennoiseries, on les met de côté. Vous passez à l’heure choisie et vous payez au comptoir : ni attente, ni prépaiement.</p>
+            <ul class="order-facts">
+              <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg>Retrait dès demain</li>
+              <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg>Fermé le lundi</li>
+              <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg>Paiement en boutique</li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="order-form" id="order-form" novalidate>
+          <div class="order-main">
+            <!-- Step 1: products -->
+            <fieldset class="step" aria-describedby="err-products">
+              <legend class="step-legend"><span class="step-num">1</span>Vos produits</legend>
+              <p class="field-error" id="err-products" hidden></p>
+
+              <p class="group-label">Pains</p>
+              <ul class="order-list">
+                <li class="order-item" data-name="Baguette tradition" data-price="1.40">
+                  <div class="oi-info"><label for="q-baguette">Baguette tradition</label><span class="oi-meta">La pièce</span></div>
+                  <span class="oi-price">1,40 €</span>
+                  <div class="stepper">
+                    <button type="button" data-step="-1" aria-label="Retirer une baguette tradition"><svg width="18" height="18" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                    <input type="number" id="q-baguette" name="baguette" value="0" min="0" max="30" inputmode="numeric">
+                    <button type="button" data-step="1" aria-label="Ajouter une baguette tradition"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                  </div>
+                </li>
+                <li class="order-item" data-name="Miche de campagne" data-price="4.80">
+                  <div class="oi-info"><label for="q-miche">Miche de campagne</label><span class="oi-meta">Au levain, 800 g</span></div>
+                  <span class="oi-price">4,80 €</span>
+                  <div class="stepper">
+                    <button type="button" data-step="-1" aria-label="Retirer une miche de campagne"><svg width="18" height="18" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                    <input type="number" id="q-miche" name="miche" value="0" min="0" max="30" inputmode="numeric">
+                    <button type="button" data-step="1" aria-label="Ajouter une miche de campagne"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                  </div>
+                </li>
+                <li class="order-item" data-name="Pain aux noix & raisins" data-price="4.90">
+                  <div class="oi-info"><label for="q-noix">Pain aux noix &amp; raisins</label><span class="oi-meta">400 g</span></div>
+                  <span class="oi-price">4,90 €</span>
+                  <div class="stepper">
+                    <button type="button" data-step="-1" aria-label="Retirer un pain aux noix"><svg width="18" height="18" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                    <input type="number" id="q-noix" name="noix" value="0" min="0" max="30" inputmode="numeric">
+                    <button type="button" data-step="1" aria-label="Ajouter un pain aux noix"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                  </div>
+                </li>
+              </ul>
+
+              <p class="group-label">Viennoiseries</p>
+              <ul class="order-list">
+                <li class="order-item" data-name="Croissant pur beurre" data-price="1.35">
+                  <div class="oi-info"><label for="q-croissant">Croissant pur beurre</label><span class="oi-meta">La pièce</span></div>
+                  <span class="oi-price">1,35 €</span>
+                  <div class="stepper">
+                    <button type="button" data-step="-1" aria-label="Retirer un croissant"><svg width="18" height="18" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                    <input type="number" id="q-croissant" name="croissant" value="0" min="0" max="30" inputmode="numeric">
+                    <button type="button" data-step="1" aria-label="Ajouter un croissant"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                  </div>
+                </li>
+                <li class="order-item" data-name="Pain au chocolat" data-price="1.50">
+                  <div class="oi-info"><label for="q-painchoc">Pain au chocolat</label><span class="oi-meta">La pièce</span></div>
+                  <span class="oi-price">1,50 €</span>
+                  <div class="stepper">
+                    <button type="button" data-step="-1" aria-label="Retirer un pain au chocolat"><svg width="18" height="18" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                    <input type="number" id="q-painchoc" name="painchoc" value="0" min="0" max="30" inputmode="numeric">
+                    <button type="button" data-step="1" aria-label="Ajouter un pain au chocolat"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                  </div>
+                </li>
+                <li class="order-item" data-name="Brioche aux pralines (part)" data-price="2.90">
+                  <div class="oi-info"><label for="q-brioche">Brioche aux pralines</label><span class="oi-meta">La part</span></div>
+                  <span class="oi-price">2,90 €</span>
+                  <div class="stepper">
+                    <button type="button" data-step="-1" aria-label="Retirer une part de brioche aux pralines"><svg width="18" height="18" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                    <input type="number" id="q-brioche" name="brioche" value="0" min="0" max="30" inputmode="numeric">
+                    <button type="button" data-step="1" aria-label="Ajouter une part de brioche aux pralines"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                  </div>
+                </li>
+              </ul>
+
+              <p class="group-label">Pâtisseries</p>
+              <ul class="order-list">
+                <li class="order-item" data-name="Tarte aux pralines (part)" data-price="4.20">
+                  <div class="oi-info"><label for="q-tarte">Tarte aux pralines</label><span class="oi-meta">La part</span></div>
+                  <span class="oi-price">4,20 €</span>
+                  <div class="stepper">
+                    <button type="button" data-step="-1" aria-label="Retirer une part de tarte aux pralines"><svg width="18" height="18" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                    <input type="number" id="q-tarte" name="tarte" value="0" min="0" max="30" inputmode="numeric">
+                    <button type="button" data-step="1" aria-label="Ajouter une part de tarte aux pralines"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                  </div>
+                </li>
+                <li class="order-item" data-name="Flan pâtissier vanille (part)" data-price="3.60">
+                  <div class="oi-info"><label for="q-flan">Flan pâtissier vanille</label><span class="oi-meta">La part</span></div>
+                  <span class="oi-price">3,60 €</span>
+                  <div class="stepper">
+                    <button type="button" data-step="-1" aria-label="Retirer une part de flan"><svg width="18" height="18" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                    <input type="number" id="q-flan" name="flan" value="0" min="0" max="30" inputmode="numeric">
+                    <button type="button" data-step="1" aria-label="Ajouter une part de flan"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Step 2: pickup -->
+            <fieldset class="step">
+              <legend class="step-legend"><span class="step-num">2</span>Le retrait</legend>
+
+              <fieldset class="subgroup" aria-describedby="err-day">
+                <legend class="sub-legend">Jour de retrait <span>dès demain, fermé le lundi</span></legend>
+                <div class="chips" id="pickup-days"></div>
+                <p class="field-error" id="err-day" hidden></p>
+              </fieldset>
+
+              <fieldset class="subgroup" aria-describedby="err-slot">
+                <legend class="sub-legend">Créneau</legend>
+                <div class="chips" id="pickup-slots"><p class="chips-hint">Choisissez d’abord un jour.</p></div>
+                <p class="field-error" id="err-slot" hidden></p>
+              </fieldset>
+            </fieldset>
+
+            <!-- Step 3: contact -->
+            <fieldset class="step">
+              <legend class="step-legend"><span class="step-num">3</span>Vos coordonnées</legend>
+              <div class="fields">
+                <div class="field">
+                  <label for="c-name">Nom et prénom</label>
+                  <input type="text" id="c-name" name="name" autocomplete="name" aria-describedby="err-name">
+                  <p class="field-error" id="err-name" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="c-phone">Téléphone</label>
+                  <input type="tel" id="c-phone" name="phone" autocomplete="tel" inputmode="tel" aria-describedby="hint-phone err-phone">
+                  <p class="field-hint" id="hint-phone">Uniquement pour vous prévenir en cas d’imprévu.</p>
+                  <p class="field-error" id="err-phone" hidden></p>
+                </div>
+                <div class="field field-wide">
+                  <label for="c-note">Une précision ? <span class="optional">(facultatif)</span></label>
+                  <textarea id="c-note" name="note" rows="3" placeholder="Baguettes bien cuites, pain de mie tranché…"></textarea>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <!-- Live ticket -->
+          <aside class="ticket-wrap" aria-labelledby="ticket-title">
+            <div class="ticket">
+              <p class="ticket-brand">Maison Fournier · Bon de retrait</p>
+              <h3 id="ticket-title">Votre commande</h3>
+              <p class="ticket-empty" id="ticket-empty">Votre panier est vide. Ajoutez vos produits avec le bouton +.</p>
+              <ul class="ticket-lines" id="ticket-lines"></ul>
+              <div class="ticket-total">
+                <span>Total</span>
+                <output id="ticket-total" aria-live="polite">0,00 €</output>
+              </div>
+              <p class="ticket-when" id="ticket-when">Retrait : jour et créneau à choisir</p>
+              <p class="form-alert" id="form-alert" role="alert" hidden></p>
+              <button class="btn btn-block" type="submit">Valider ma commande <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              <p class="ticket-note">Paiement au comptoir, en carte ou en espèces.</p>
+            </div>
+          </aside>
+        </form>
+
+        <div class="order-success" id="order-success" hidden>
+          <div class="ticket ticket-success">
+            <span class="success-icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <h3 id="success-title" tabindex="-1">Merci, c’est noté !</h3>
+            <p class="success-when" id="success-when"></p>
+            <ul class="ticket-lines" id="success-lines"></ul>
+            <div class="ticket-total"><span>À régler au retrait</span><strong id="success-total"></strong></div>
+            <p class="success-contact" id="success-contact"></p>
+            <p class="demo-note">Démo : aucune donnée n’a été envoyée.</p>
+            <button class="btn btn-ghost" type="button" id="order-again">Passer une autre commande</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SALON ============ -->
+    <section class="section salon" id="salon" aria-labelledby="salon-title">
+      <div class="container salon-grid">
+        <div class="salon-media" data-reveal>
+          <img src="https://images.unsplash.com/photo-1763647872237-c76e660cf38b?auto=format&fit=crop&w=1200&q=70"
+               srcset="https://images.unsplash.com/photo-1763647872237-c76e660cf38b?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1763647872237-c76e660cf38b?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1763647872237-c76e660cf38b?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1763647872237-c76e660cf38b?auto=format&fit=crop&w=1600&q=70 1600w"
+               sizes="(min-width: 961px) 720px, 92vw" width="1600" height="1072" loading="lazy"
+               alt="Café latte avec un dessin de feuille dans la mousse, servi à côté de croissants et de pains au chocolat sur une ardoise">
+          <p class="salon-badge"><span>Café + croissant</span><strong>3,20 €</strong></p>
+        </div>
+        <div class="salon-text" data-reveal>
+          <p class="eyebrow">Le salon</p>
+          <h2 id="salon-title">Petit-déjeuner <em>sur place</em></h2>
+          <p class="lead">Quelques tables en bois, une banquette au soleil du matin et un café de torréfacteur lyonnais. Le salon accueille seize personnes, pour prendre son temps avant d’attaquer la journée.</p>
+          <ul class="menu-list menu-list--dark">
+            <li><div class="mi-row"><span class="mi-name">Café + croissant</span><span class="mi-leader"></span><span class="mi-price">3,20 €</span></div></li>
+            <li><div class="mi-row"><span class="mi-name">Formule du matin</span><span class="mi-leader"></span><span class="mi-price">7,90 €</span></div><p class="mi-desc">Boisson chaude, jus d’orange pressé, tartine au levain ou viennoiserie</p></li>
+            <li><div class="mi-row"><span class="mi-name">Tartine beurre &amp; confiture</span><span class="mi-leader"></span><span class="mi-price">3,50 €</span></div><p class="mi-desc">Pain au levain, beurre demi-sel, confiture maison</p></li>
+            <li><div class="mi-row"><span class="mi-name">Chocolat chaud à l’ancienne</span><span class="mi-leader"></span><span class="mi-price">3,80 €</span></div></li>
+          </ul>
+          <p class="salon-hours"><svg width="20" height="20" aria-hidden="true"><use href="#i-cup"/></svg>Service en salle du mardi au dimanche, de 7h à 12h.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AVIS ============ -->
+    <section class="section reviews" id="avis" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="reviews-head" data-reveal>
+          <p class="eyebrow">Avis</p>
+          <h2 id="reviews-title">Ce qu’en disent les habitués</h2>
+        </div>
+        <div class="reviews-grid">
+          <figure class="review review--feature" data-reveal>
+            <blockquote><p>La tradition est d’une régularité folle : croûte qui craque, mie crème et ce petit goût de noisette. Le dimanche, la queue déborde sur le trottoir… et ça vaut vraiment le coup.</p></blockquote>
+            <figcaption><strong>Claire M.</strong> · Croix-Rousse</figcaption>
+          </figure>
+          <figure class="review" data-reveal>
+            <blockquote><p>Je commande mes croissants la veille et je passe à 7h avant le métro. Tout est prêt, encore tiède, pas une minute d’attente.</p></blockquote>
+            <figcaption><strong>Julien R.</strong> · Les Pentes</figcaption>
+          </figure>
+          <figure class="review" data-reveal>
+            <blockquote><p>Un entremets praliné-noisette pour les 40 ans de ma sœur : magnifique, pas trop sucré, et une équipe adorable au téléphone.</p></blockquote>
+            <figcaption><strong>Nadia B.</strong> · Caluire-et-Cuire</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INFOS PRATIQUES ============ -->
+    <section class="section infos" id="infos" aria-labelledby="infos-title">
+      <div class="container">
+        <div class="infos-head" data-reveal>
+          <p class="eyebrow">Infos pratiques</p>
+          <h2 id="infos-title">Passez nous voir, en haut des Pentes</h2>
+        </div>
+
+        <div class="infos-grid">
+          <div class="infos-col" data-reveal>
+            <h3 class="infos-title">Nous trouver</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="icon-badge"><svg width="20" height="20" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <div><strong>12 rue des Fileuses</strong><br>69004 Lyon, Croix-Rousse</div>
+              </li>
+              <li>
+                <span class="icon-badge"><svg width="20" height="20" aria-hidden="true"><use href="#i-metro"/></svg></span>
+                <div>Métro C, arrêt Croix-Rousse<br><span class="muted">4 minutes à pied · bus C13</span></div>
+              </li>
+              <li>
+                <span class="icon-badge"><svg width="20" height="20" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                <div><a href="tel:+33465712846">04 65 71 28 46</a></div>
+              </li>
+              <li>
+                <span class="icon-badge"><svg width="20" height="20" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                <div><a href="mailto:contact@maison-fournier.example">contact@maison-fournier.example</a></div>
+              </li>
+            </ul>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=12%20rue%20des%20Fileuses%2C%2069004%20Lyon" target="_blank" rel="noopener">Voir l’itinéraire <svg width="18" height="18" aria-hidden="true"><use href="#i-route"/></svg><span class="sr-only">(ouvre Google Maps dans un nouvel onglet)</span></a>
+            <div class="notice">
+              <span class="notice-icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-cake"/></svg></span>
+              <div>
+                <p class="notice-title">Gâteaux d’anniversaire</p>
+                <p>Commandes 48 h à l’avance, en boutique ou au <a href="tel:+33465712846">04 65 71 28 46</a>. De 6 à 30 parts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="infos-col" data-reveal>
+            <h3 class="infos-title" id="hours-title">Horaires</h3>
+            <table class="hours" aria-labelledby="hours-title">
+              <tbody>
+                <tr data-day="1" class="is-closed"><th scope="row">Lundi</th><td>Fermé</td></tr>
+                <tr data-day="2"><th scope="row">Mardi</th><td>6h30 – 19h30</td></tr>
+                <tr data-day="3"><th scope="row">Mercredi</th><td>6h30 – 19h30</td></tr>
+                <tr data-day="4"><th scope="row">Jeudi</th><td>6h30 – 19h30</td></tr>
+                <tr data-day="5"><th scope="row">Vendredi</th><td>6h30 – 19h30</td></tr>
+                <tr data-day="6"><th scope="row">Samedi</th><td>6h30 – 19h30</td></tr>
+                <tr data-day="0"><th scope="row">Dimanche</th><td>6h30 – 13h30</td></tr>
+              </tbody>
+            </table>
+            <p class="hours-note">Jours fériés : ouvert le matin, de 6h30 à 13h30.<br>Carte bancaire, espèces et titres-restaurant acceptés.</p>
+          </div>
+
+          <div class="infos-media" data-reveal>
+            <img src="https://images.unsplash.com/photo-1770650195496-f8b577782ca3?auto=format&fit=crop&w=800&q=70"
+                 srcset="https://images.unsplash.com/photo-1770650195496-f8b577782ca3?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1770650195496-f8b577782ca3?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1770650195496-f8b577782ca3?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1770650195496-f8b577782ca3?auto=format&fit=crop&w=1600&q=70 1600w"
+                 sizes="(min-width: 961px) 400px, 92vw" width="1600" height="2400" loading="lazy"
+                 alt="Vitrine de la boutique garnie de viennoiseries, de tartes et de sandwichs">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-logo"><svg width="28" height="28" aria-hidden="true"><use href="#i-wheat"/></svg>Maison Fournier</p>
+          <p>Boulangerie-pâtisserie artisanale au levain naturel, à la Croix-Rousse depuis 2014.</p>
+          <a class="btn btn-butter btn-sm" href="#commande">Commander pour demain</a>
+        </div>
+        <div>
+          <h2 class="footer-title">Adresse</h2>
+          <p>12 rue des Fileuses<br>69004 Lyon</p>
+          <p><a href="https://www.google.com/maps/search/?api=1&amp;query=12%20rue%20des%20Fileuses%2C%2069004%20Lyon" target="_blank" rel="noopener">Voir l’itinéraire<span class="sr-only"> (nouvel onglet)</span></a></p>
+        </div>
+        <div>
+          <h2 class="footer-title">Horaires</h2>
+          <p>Mardi – samedi : 6h30 – 19h30<br>Dimanche : 6h30 – 13h30<br>Lundi : fermé</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Contact</h2>
+          <p><a href="tel:+33465712846">04 65 71 28 46</a><br><a href="mailto:contact@maison-fournier.example">contact@maison-fournier.example</a></p>
+        </div>
+      </div>
+
+      <p class="footer-wordmark" aria-hidden="true">Maison Fournier</p>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Maison Fournier</p>
+        <details class="legal">
+          <summary>Mentions légales</summary>
+          <div class="legal-body">
+            <p><strong>Site de démonstration.</strong> Maison Fournier est une entreprise fictive ; les informations ci-dessous sont inventées pour l’exemple.</p>
+            <p>Éditeur : Maison Fournier SARL (fictive), au capital de 10 000 €, 12 rue des Fileuses, 69004 Lyon. SIRET 000 000 000 00000. RCS Lyon (fictif). Directeur de la publication : Thomas Fournier (personnage fictif). Contact : contact@maison-fournier.example.</p>
+            <p>Hébergement : GitHub Pages, GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+            <p>Photographies : Unsplash (licence Unsplash). Aucune donnée personnelle n’est collectée ni transmise par ce site ; le formulaire de commande est une démonstration.</p>
+          </div>
+        </details>
+        <p><a href="https://github.com/sacha9214">Site réalisé par Sacha</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky action bar on phones -->
+  <div class="mobile-bar">
+    <a class="btn btn-ghost" href="tel:+33465712846"><svg width="18" height="18" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+    <a class="btn" href="#commande">Commander</a>
+  </div>
+</body>
+</html>

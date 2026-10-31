@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Exemples de sites pour entreprises locales · Sacha</title>
+  <meta name="description" content="Des exemples de sites réalisés pour des commerces et artisans fictifs : restaurant, boulangerie, garage, fleuriste, tatoueur, ostéopathe, photographe, artisan du bâtiment." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2314171f'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='%239db0ff'%3ES%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root { --ink: #14171f; --muted: #5b6170; --paper: #f6f6f2; --line: #e3e3dc; --accent: #2848d6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .wrap { width: min(100% - 2.5rem, 1180px); margin-inline: auto; }
+    header { padding: clamp(3rem, 8vw, 6rem) 0 2.5rem; }
+    .eyebrow { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.9rem; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.05; letter-spacing: -0.03em; margin: 0 0 1rem; max-width: 18ch; }
+    .lead { font-size: 1.15rem; color: var(--muted); max-width: 60ch; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.6rem; padding-bottom: 4rem; list-style: none; margin: 0; }
+    .card { display: block; text-decoration: none; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 1px 2px rgb(20 23 31 / 6%), 0 10px 28px rgb(20 23 31 / 8%); transition: transform 0.25s ease, box-shadow 0.25s ease; height: 100%; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 2px 4px rgb(20 23 31 / 8%), 0 18px 40px rgb(20 23 31 / 12%); }
+    .shot { aspect-ratio: 16 / 10; background: #e9e9e3; overflow: hidden; border-bottom: 1px solid var(--line); }
+    .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform 0.6s ease; }
+    .card:hover .shot img { transform: scale(1.03); }
+    .body { padding: 1.1rem 1.25rem 1.3rem; }
+    .sector { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .name { font-size: 1.25rem; font-weight: 650; letter-spacing: -0.01em; margin: 0.15rem 0 0.35rem; }
+    .what { color: var(--muted); font-size: 0.95rem; margin: 0 0 0.8rem; }
+    .go { font-weight: 600; color: var(--accent); }
+    footer { border-top: 1px solid var(--line); padding: 1.6rem 0 2.2rem; color: var(--muted); font-size: 0.9rem; }
+    @media (prefers-reduced-motion: reduce) { .card, .shot img { transition: none; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <p class="eyebrow">Exemples de sites</p>
+    <h1>Un site pensé pour chaque métier.</h1>
+    <p class="lead">Ces sites sont des démonstrations, réalisées pour des entreprises fictives. Ouvrez-les sur votre téléphone : tout fonctionne. Le vôtre serait fait avec vos photos, vos textes et vos horaires.</p>
+  </header>
+
+  <main class="wrap">
+    <ul class="grid">
+      <li><a class="card" href="restaurant/"><div class="shot"><img src="thumbs/restaurant.jpg" alt="Aperçu du site du restaurant Le Comptoir des Halles" width="1200" height="750" loading="lazy" /></div><div class="body"><span class="sector">Restaurant · bistrot</span><p class="name">Le Comptoir des Halles</p><p class="what">Carte, ardoise du jour, réservation en ligne, horaires.</p><span class="go">Voir le site →</span></div></a></li>
+      <li><a class="card" href="boulangerie/"><div class="shot"><img src="thumbs/boulangerie.jpg" alt="Aperçu du site de la boulangerie Maison Fournier" width="1200" height="750" loading="lazy" /></div><div class="body"><span class="sector">Boulangerie · pâtisserie</span><p class="name">Maison Fournier</p><p class="what">Produits et prix, commande à retirer, horaires.</p><span class="go">Voir le site →</span></div></a></li>
+      <li><a class="card" href="https://sacha9214.github.io/artisan-demo/"><div class="shot"><img src="thumbs/artisan.jpg" alt="Aperçu du site de l'artisan Morel Finitions" width="1200" height="750" loading="lazy" /></div><div class="body"><span class="sector">Artisan du bâtiment</span><p class="name">Morel Finitions</p><p class="what">Réalisations avant / après, devis en ligne, espace de gestion.</p><span class="go">Voir le site →</span></div></a></li>
+      <li><a class="card" href="garage/"><div class="shot"><img src="thumbs/garage.jpg" alt="Aperçu du site du Garage Lefèvre" width="1200" height="750" loading="lazy" /></div><div class="body"><span class="sector">Garage · auto</span><p class="name">Garage Lefèvre</p><p class="what">Prestations et prix, prise de rendez-vous, avis.</p><span class="go">Voir le site →</span></div></a></li>
+      <li><a class="card" href="fleuriste/"><div class="shot"><img src="thumbs/fleuriste.jpg" alt="Aperçu du site du fleuriste Pétale & Tige" width="1200" height="750" loading="lazy" /></div><div class="body"><span class="sector">Commerce · fleuriste</span><p class="name">Pétale &amp; Tige</p><p class="what">Bouquets du moment, commande et livraison, événements.</p><span class="go">Voir le site →</span></div></a></li>
+      <li><a class="card" href="tatouage/"><div class="shot"><img src="thumbs/tatouage.jpg" alt="Aperçu du site du studio de tatouage Encre Noire" width="1200" height="750" loading="lazy" /></div><div class="body"><span class="sector">Tatouage</span><p class="name">Encre Noire</p><p class="what">Portfolio filtrable, artistes, demande de projet.</p><span class="go">Voir le site →</span></div></a></li>
+      <li><a class="card" href="osteopathe/"><div class="shot"><img src="thumbs/osteopathe.jpg" alt="Aperçu du site du cabinet d'ostéopathie Camille Aubert" width="1200" height="750" loading="lazy" /></div><div class="body"><span class="sector">Santé · bien-être</span><p class="name">Cabinet Camille Aubert</p><p class="what">Déroulement d'une séance, tarifs, prise de rendez-vous.</p><span class="go">Voir le site →</span></div></a></li>
+      <li><a class="card" href="photographe/"><div class="shot"><img src="thumbs/photographe.jpg" alt="Aperçu du site de la photographe Clara Vidal" width="1200" height="750" loading="lazy" /></div><div class="body"><span class="sector">Services · photographe</span><p class="name">Clara Vidal Photographie</p><p class="what">Portfolio plein écran, prestations, demande de devis.</p><span class="go">Voir le site →</span></div></a></li>
+    </ul>
+  </main>
+
+  <footer class="wrap">
+    Entreprises fictives, photos Unsplash. Sites réalisés par <a href="https://github.com/sacha9214">Sacha</a>.
+  </footer>
+</body>
+</html>
